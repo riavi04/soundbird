@@ -95,12 +95,14 @@ a:hover{border-bottom-color:var(--accent3)}
 }
 .enter-btn{
   margin-top:36px;
-  padding:14px 28px;border:1px solid var(--line2);border-radius:999px;
-  font-size:.95rem;letter-spacing:.01em;color:var(--accent);
+  padding:14px 30px;border:1px solid var(--line2);border-radius:999px;
+  /* The whole label is set in the same italic serif as the "bird" inside it. */
+  font-family:var(--serif);font-style:italic;
+  font-size:1.12rem;letter-spacing:.01em;color:var(--accent);
   background:rgba(127,212,184,.06);transition:.25s;
   max-width:100%;text-wrap:balance;line-height:1.45;
 }
-.enter-btn em{font-family:var(--serif);font-style:italic;font-size:1.05em}
+.enter-btn em{font-style:italic}
 .enter-btn:hover{background:rgba(127,212,184,.14);border-color:var(--accent)}
 .loadbar{
   position:absolute;top:0;left:0;height:2px;width:0%;

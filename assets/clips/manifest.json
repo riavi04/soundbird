@@ -14,7 +14,9 @@
     "recordist": "Jerome Fischer",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Peru"
+    "country": "Peru",
+    "tune_offset": -15.0,
+    "dominant_hz": 3222.6
    },
    {
     "file": "thicknee_1.mp3",
@@ -25,7 +27,9 @@
     "recordist": "Andrew Spencer",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Peru"
+    "country": "Peru",
+    "tune_offset": -11.05,
+    "dominant_hz": 2460.5
    },
    {
     "file": "thicknee_2.mp3",
@@ -36,7 +40,9 @@
     "recordist": "Andrew Spencer",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Peru"
+    "country": "Peru",
+    "tune_offset": -5.01,
+    "dominant_hz": 1736.6
    }
   ]
  },
@@ -55,7 +61,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": 6.42,
+    "dominant_hz": 897.3
    },
    {
     "file": "potoo_1.mp3",
@@ -66,7 +74,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": 10.5,
+    "dominant_hz": 708.9
    },
    {
     "file": "potoo_2.mp3",
@@ -77,7 +87,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": -12.27,
+    "dominant_hz": 2641.1
    }
   ]
  },
@@ -96,7 +108,9 @@
     "recordist": "Stanislas Wroza",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Canada"
+    "country": "Canada",
+    "tune_offset": -1.86,
+    "dominant_hz": 1447.0
    },
    {
     "file": "loon_1.mp3",
@@ -107,7 +121,9 @@
     "recordist": "Stanislas Wroza",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Canada"
+    "country": "Canada",
+    "tune_offset": 7.75,
+    "dominant_hz": 830.8
    },
    {
     "file": "loon_2.mp3",
@@ -118,7 +134,9 @@
     "recordist": "Stanislas Wroza",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Canada"
+    "country": "Canada",
+    "tune_offset": -0.04,
+    "dominant_hz": 1302.6
    }
   ]
  },
@@ -137,7 +155,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": -0.99,
+    "dominant_hz": 1376.7
    },
    {
     "file": "piha_1.mp3",
@@ -148,7 +168,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": -2.21,
+    "dominant_hz": 1477.3
    },
    {
     "file": "piha_2.mp3",
@@ -159,7 +181,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": -2.18,
+    "dominant_hz": 1474.8
    }
   ]
  },
@@ -178,7 +202,9 @@
     "recordist": "Stein \u00d8. Nilsen",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Norway"
+    "country": "Norway",
+    "tune_offset": -8.01,
+    "dominant_hz": 2064.4
    },
    {
     "file": "ptarmigan_1.mp3",
@@ -189,7 +215,9 @@
     "recordist": "Gustav Haapalahti",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Sweden"
+    "country": "Sweden",
+    "tune_offset": 3.76,
+    "dominant_hz": 1046.4
    },
    {
     "file": "ptarmigan_2.mp3",
@@ -200,7 +228,9 @@
     "recordist": "Torborg Berge",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Norway"
+    "country": "Norway",
+    "tune_offset": -7.16,
+    "dominant_hz": 1965.4
    }
   ]
  },
@@ -219,7 +249,9 @@
     "recordist": "Jo\u00e3o Ferreira Tom\u00e1s",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 4979.6
    },
    {
     "file": "quail_1.mp3",
@@ -230,7 +262,9 @@
     "recordist": "Jo\u00e3o Ferreira Tom\u00e1s",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 3130.5
    },
    {
     "file": "quail_2.mp3",
@@ -241,7 +275,9 @@
     "recordist": "Guido O. Keijl",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Morocco"
+    "country": "Morocco",
+    "tune_offset": -15.0,
+    "dominant_hz": 3497.6
    }
   ]
  },
@@ -260,7 +296,9 @@
     "recordist": "Don Henise",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": -15.0,
+    "dominant_hz": 4646.8
    },
    {
     "file": "woodcock_1.mp3",
@@ -271,7 +309,9 @@
     "recordist": "kl",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 15.0,
+    "dominant_hz": 302.0
    },
    {
     "file": "woodcock_2.mp3",
@@ -282,7 +322,9 @@
     "recordist": "Ray Cooke",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Canada"
+    "country": "Canada",
+    "tune_offset": -15.0,
+    "dominant_hz": 4712.9
    }
   ]
  },
@@ -301,7 +343,9 @@
     "recordist": "Barry Edmonston",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "New Zealand"
+    "country": "New Zealand",
+    "tune_offset": -4.64,
+    "dominant_hz": 1700.0
    },
    {
     "file": "kiwi_1.mp3",
@@ -312,7 +356,9 @@
     "recordist": "Barry Edmonston",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "New Zealand"
+    "country": "New Zealand",
+    "tune_offset": -4.56,
+    "dominant_hz": 1691.5
    },
    {
     "file": "kiwi_2.mp3",
@@ -323,7 +369,9 @@
     "recordist": "Meena Haribal",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "New Zealand"
+    "country": "New Zealand",
+    "tune_offset": -3.54,
+    "dominant_hz": 1594.9
    }
   ]
  },
@@ -342,7 +390,9 @@
     "recordist": "Michael Hurben",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": -9.14,
+    "dominant_hz": 2204.0
    },
    {
     "file": "sagegrouse_1.mp3",
@@ -353,7 +403,9 @@
     "recordist": "Sue Riffe",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 15.0,
+    "dominant_hz": 298.7
    },
    {
     "file": "sagegrouse_2.mp3",
@@ -364,7 +416,9 @@
     "recordist": "Sue Riffe",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 15.0,
+    "dominant_hz": 278.2
    }
   ]
  },
@@ -383,7 +437,9 @@
     "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Brazil"
+    "country": "Brazil",
+    "tune_offset": -1.6,
+    "dominant_hz": 1425.9
    },
    {
     "file": "bellbird_1.mp3",
@@ -394,7 +450,9 @@
     "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Brazil"
+    "country": "Brazil",
+    "tune_offset": -1.68,
+    "dominant_hz": 1432.3
    },
    {
     "file": "bellbird_2.mp3",
@@ -405,7 +463,9 @@
     "recordist": "Ricardo Gagliardi",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Brazil"
+    "country": "Brazil",
+    "tune_offset": -2.33,
+    "dominant_hz": 1487.5
    }
   ]
  },
@@ -424,7 +484,9 @@
     "recordist": "Meena Haribal",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United Kingdom of Great Britain and Northern Ireland"
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "tune_offset": -5.51,
+    "dominant_hz": 1786.7
    },
    {
     "file": "penguin_1.mp3",
@@ -435,7 +497,9 @@
     "recordist": "Aladdin",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United Kingdom of Great Britain and Northern Ireland"
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "tune_offset": -2.93,
+    "dominant_hz": 1539.4
    },
    {
     "file": "penguin_2.mp3",
@@ -446,7 +510,9 @@
     "recordist": "Meena Haribal",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United Kingdom of Great Britain and Northern Ireland"
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "tune_offset": -11.17,
+    "dominant_hz": 2477.9
    }
   ]
  },
@@ -465,7 +531,9 @@
     "recordist": "Jordi Calvet",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 4250.0
    },
    {
     "file": "starling_1.mp3",
@@ -476,7 +544,9 @@
     "recordist": "Lionel FREDERIC",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "France"
+    "country": "France",
+    "tune_offset": -11.42,
+    "dominant_hz": 2514.8
    },
    {
     "file": "starling_2.mp3",
@@ -487,7 +557,9 @@
     "recordist": "Colm Philpott",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ireland"
+    "country": "Ireland",
+    "tune_offset": -15.0,
+    "dominant_hz": 3800.1
    }
   ]
  },
@@ -506,7 +578,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -9.16,
+    "dominant_hz": 2206.0
    },
    {
     "file": "lyrebird_1.mp3",
@@ -517,7 +591,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -11.38,
+    "dominant_hz": 2509.0
    },
    {
     "file": "lyrebird_2.mp3",
@@ -528,7 +604,9 @@
     "recordist": "Vanessa Ferdinand",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -13.71,
+    "dominant_hz": 2869.2
    }
   ]
  },
@@ -547,7 +625,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 8.98,
+    "dominant_hz": 774.1
    },
    {
     "file": "kookaburra_1.mp3",
@@ -558,7 +638,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -1.91,
+    "dominant_hz": 1451.8
    },
    {
     "file": "kookaburra_2.mp3",
@@ -569,7 +651,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 8.92,
+    "dominant_hz": 776.4
    }
   ]
  },
@@ -588,7 +672,9 @@
     "recordist": "Peter Boesman",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "China"
+    "country": "China",
+    "tune_offset": 4.87,
+    "dominant_hz": 981.2
    },
    {
     "file": "crane_1.mp3",
@@ -599,7 +685,9 @@
     "recordist": "Peter Boesman",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "China"
+    "country": "China",
+    "tune_offset": -15.0,
+    "dominant_hz": 3454.8
    },
    {
     "file": "crane_2.mp3",
@@ -610,7 +698,9 @@
     "recordist": "Peter Boesman",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "China"
+    "country": "China",
+    "tune_offset": 8.24,
+    "dominant_hz": 807.6
    }
   ]
  },
@@ -629,7 +719,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 15.0,
+    "dominant_hz": 276.7
    }
   ]
  },
@@ -648,7 +740,9 @@
     "recordist": "Sue Riffe",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 10.9,
+    "dominant_hz": 692.6
    },
    {
     "file": "turkey_1.mp3",
@@ -659,7 +753,9 @@
     "recordist": "Paul Marvin",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 13.61,
+    "dominant_hz": 592.4
    },
    {
     "file": "turkey_2.mp3",
@@ -670,7 +766,9 @@
     "recordist": "Paul Driver",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 1.26,
+    "dominant_hz": 1208.5
    }
   ]
  },
@@ -689,7 +787,9 @@
     "recordist": "Sara L. Castro (Museo de Historia Natural Unillanos)",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Colombia"
+    "country": "Colombia",
+    "tune_offset": -15.0,
+    "dominant_hz": 4081.7
    },
    {
     "file": "hoatzin_1.mp3",
@@ -700,7 +800,9 @@
     "recordist": "Aladdin",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Guyana"
+    "country": "Guyana",
+    "tune_offset": -15.0,
+    "dominant_hz": 3802.2
    },
    {
     "file": "hoatzin_2.mp3",
@@ -711,7 +813,9 @@
     "recordist": "Daisy  Utitiaj Nunink",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": -14.63,
+    "dominant_hz": 3025.9
    }
   ]
  },
@@ -730,7 +834,9 @@
     "recordist": "Richard E. Webster",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Guyana"
+    "country": "Guyana",
+    "tune_offset": -4.3,
+    "dominant_hz": 1666.5
    },
    {
     "file": "capuchinbird_1.mp3",
@@ -741,7 +847,9 @@
     "recordist": "Richard E. Webster",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Guyana"
+    "country": "Guyana",
+    "tune_offset": -1.9,
+    "dominant_hz": 1450.9
    },
    {
     "file": "capuchinbird_2.mp3",
@@ -752,7 +860,9 @@
     "recordist": "Brice de la Croix",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "French Guiana"
+    "country": "French Guiana",
+    "tune_offset": -1.96,
+    "dominant_hz": 1455.7
    }
   ]
  },
@@ -771,7 +881,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 15.0,
+    "dominant_hz": 275.2
    },
    {
     "file": "frogmouth_1.mp3",
@@ -782,7 +894,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -5.08,
+    "dominant_hz": 1743.3
    },
    {
     "file": "frogmouth_2.mp3",
@@ -793,7 +907,9 @@
     "recordist": "Drew Davison",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 15.0,
+    "dominant_hz": 248.8
    }
   ]
  },
@@ -812,7 +928,9 @@
     "recordist": "Johannes Fischer",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "New Zealand"
+    "country": "New Zealand",
+    "tune_offset": 15.0,
+    "dominant_hz": 241.7
    }
   ]
  },
@@ -831,7 +949,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -12.16,
+    "dominant_hz": 2624.1
    },
    {
     "file": "cassowary_1.mp3",
@@ -842,7 +962,9 @@
     "recordist": "Phil Gregory",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 15.0,
+    "dominant_hz": 498.9
    },
    {
     "file": "cassowary_2.mp3",
@@ -853,7 +975,9 @@
     "recordist": "Peter Boesman",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 15.0,
+    "dominant_hz": 179.4
    }
   ]
  },
@@ -872,7 +996,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -14.92,
+    "dominant_hz": 3077.2
    },
    {
     "file": "emu_1.mp3",
@@ -883,7 +1009,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 15.0,
+    "dominant_hz": 312.0
    },
    {
     "file": "emu_2.mp3",
@@ -894,7 +1022,9 @@
     "recordist": "Eddy Smith",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 15.0,
+    "dominant_hz": 150.7
    }
   ]
  },
@@ -913,7 +1043,9 @@
     "recordist": "Stef van Zimmeren",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "tune_offset": 1.29,
+    "dominant_hz": 1206.4
    },
    {
     "file": "bittern_1.mp3",
@@ -924,7 +1056,9 @@
     "recordist": "Martin Fousert",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "tune_offset": 11.32,
+    "dominant_hz": 676.0
    },
    {
     "file": "bittern_2.mp3",
@@ -935,7 +1069,9 @@
     "recordist": "guus van duin",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "tune_offset": 0.85,
+    "dominant_hz": 1237.8
    }
   ]
  },
@@ -954,7 +1090,9 @@
     "recordist": "Th\u00e9o Treels",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "France"
+    "country": "France",
+    "tune_offset": -3.39,
+    "dominant_hz": 1581.4
    },
    {
     "file": "corncrake_1.mp3",
@@ -965,7 +1103,9 @@
     "recordist": "Anders Andersson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Sweden"
+    "country": "Sweden",
+    "tune_offset": -15.0,
+    "dominant_hz": 3306.3
    },
    {
     "file": "corncrake_2.mp3",
@@ -976,7 +1116,9 @@
     "recordist": "Marketa Rusarova",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Czechia"
+    "country": "Czechia",
+    "tune_offset": -10.41,
+    "dominant_hz": 2371.7
    }
   ]
  },
@@ -995,7 +1137,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -4.77,
+    "dominant_hz": 1712.0
    },
    {
     "file": "bowerbird_1.mp3",
@@ -1006,7 +1150,9 @@
     "recordist": "Colin Reid",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -7.55,
+    "dominant_hz": 2011.0
    },
    {
     "file": "bowerbird_2.mp3",
@@ -1017,7 +1163,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -15.0,
+    "dominant_hz": 3745.5
    }
   ]
  },
@@ -1036,7 +1184,9 @@
     "recordist": "African Bioacoustics Community",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "South Africa"
+    "country": "South Africa",
+    "tune_offset": -7.3,
+    "dominant_hz": 1981.6
    },
    {
     "file": "guineafowl_1.mp3",
@@ -1047,7 +1197,9 @@
     "recordist": "African Bioacoustics Community",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "South Africa"
+    "country": "South Africa",
+    "tune_offset": -9.18,
+    "dominant_hz": 2208.7
    },
    {
     "file": "guineafowl_2.mp3",
@@ -1058,7 +1210,9 @@
     "recordist": "African Bioacoustics Community",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "South Africa"
+    "country": "South Africa",
+    "tune_offset": 15.0,
+    "dominant_hz": 254.6
    }
   ]
  },
@@ -1077,7 +1231,9 @@
     "recordist": "Christian Kerihuel",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "India"
+    "country": "India",
+    "tune_offset": -2.02,
+    "dominant_hz": 1461.1
    },
    {
     "file": "peafowl_1.mp3",
@@ -1088,7 +1244,9 @@
     "recordist": "Clement Bruneau",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "France"
+    "country": "France",
+    "tune_offset": -0.97,
+    "dominant_hz": 1374.8
    },
    {
     "file": "peafowl_2.mp3",
@@ -1099,7 +1257,9 @@
     "recordist": "Clement Bruneau",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "France"
+    "country": "France",
+    "tune_offset": -0.74,
+    "dominant_hz": 1356.5
    }
   ]
  },
@@ -1118,7 +1278,9 @@
     "recordist": "Randall Jim\u00e9nez-Borb\u00f3n",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Costa Rica"
+    "country": "Costa Rica",
+    "tune_offset": -15.0,
+    "dominant_hz": 4971.7
    },
    {
     "file": "bellbird3_1.mp3",
@@ -1129,7 +1291,9 @@
     "recordist": "Brendan Sloan",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Costa Rica"
+    "country": "Costa Rica",
+    "tune_offset": -12.35,
+    "dominant_hz": 2653.3
    },
    {
     "file": "bellbird3_2.mp3",
@@ -1140,7 +1304,9 @@
     "recordist": "Enrique Varela",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Costa Rica"
+    "country": "Costa Rica",
+    "tune_offset": -0.32,
+    "dominant_hz": 1324.3
    }
   ]
  },
@@ -1159,7 +1325,9 @@
     "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Brazil"
+    "country": "Brazil",
+    "tune_offset": -15.0,
+    "dominant_hz": 4220.9
    },
    {
     "file": "bellbirdb_1.mp3",
@@ -1170,7 +1338,9 @@
     "recordist": "Pepe Rojas",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Trinidad and Tobago"
+    "country": "Trinidad and Tobago",
+    "tune_offset": -1.55,
+    "dominant_hz": 1421.4
    },
    {
     "file": "bellbirdb_2.mp3",
@@ -1181,7 +1351,9 @@
     "recordist": "Francisco contreras @francontreras.80",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Venezuela (Bolivarian Republic of)"
+    "country": "Venezuela (Bolivarian Republic of)",
+    "tune_offset": -0.49,
+    "dominant_hz": 1337.5
    }
   ]
  },
@@ -1200,7 +1372,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": -5.63,
+    "dominant_hz": 1799.8
    },
    {
     "file": "musicianwren_1.mp3",
@@ -1211,7 +1385,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Ecuador"
+    "country": "Ecuador",
+    "tune_offset": 1.1,
+    "dominant_hz": 1219.7
    },
    {
     "file": "musicianwren_2.mp3",
@@ -1222,7 +1398,9 @@
     "recordist": "Thiago Bicudo",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Brazil"
+    "country": "Brazil",
+    "tune_offset": -10.05,
+    "dominant_hz": 2323.6
    }
   ]
  },
@@ -1241,7 +1419,9 @@
     "recordist": "GABRIEL LEITE",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Kenya"
+    "country": "Kenya",
+    "tune_offset": -15.0,
+    "dominant_hz": 3209.6
    },
    {
     "file": "superbstarling_1.mp3",
@@ -1252,7 +1432,9 @@
     "recordist": "Peter Boesman",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Kenya"
+    "country": "Kenya",
+    "tune_offset": -15.0,
+    "dominant_hz": 3122.2
    },
    {
     "file": "superbstarling_2.mp3",
@@ -1263,7 +1445,9 @@
     "recordist": "Oliver Fowler",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Kenya"
+    "country": "Kenya",
+    "tune_offset": -15.0,
+    "dominant_hz": 3322.6
    }
   ]
  },
@@ -1282,7 +1466,9 @@
     "recordist": "Scott Crabtree",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": -3.37,
+    "dominant_hz": 1579.5
    },
    {
     "file": "chachalaca_1.mp3",
@@ -1293,7 +1479,9 @@
     "recordist": "Sue Riffe",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": -11.05,
+    "dominant_hz": 2461.8
    },
    {
     "file": "chachalaca_2.mp3",
@@ -1304,7 +1492,9 @@
     "recordist": "GABRIEL LEITE",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Guatemala"
+    "country": "Guatemala",
+    "tune_offset": 1.3,
+    "dominant_hz": 1206.1
    }
   ]
  },
@@ -1323,7 +1513,9 @@
     "recordist": "Guido O. Keijl",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Morocco"
+    "country": "Morocco",
+    "tune_offset": -15.0,
+    "dominant_hz": 3153.6
    },
    {
     "file": "nightingale_1.mp3",
@@ -1334,7 +1526,9 @@
     "recordist": "Paul Kelly",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Cyprus"
+    "country": "Cyprus",
+    "tune_offset": -15.0,
+    "dominant_hz": 3561.4
    },
    {
     "file": "nightingale_2.mp3",
@@ -1345,7 +1539,9 @@
     "recordist": "Paul Kelly",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Cyprus"
+    "country": "Cyprus",
+    "tune_offset": 15.0,
+    "dominant_hz": 156.5
    }
   ]
  },
@@ -1364,7 +1560,9 @@
     "recordist": "Olivier SWIFT",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "France"
+    "country": "France",
+    "tune_offset": 14.92,
+    "dominant_hz": 549.2
    },
    {
     "file": "cuckoo_1.mp3",
@@ -1375,7 +1573,9 @@
     "recordist": "Christian Kerihuel",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "France"
+    "country": "France",
+    "tune_offset": 14.93,
+    "dominant_hz": 549.0
    },
    {
     "file": "cuckoo_2.mp3",
@@ -1386,7 +1586,9 @@
     "recordist": "Philippe_Grange",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "France"
+    "country": "France",
+    "tune_offset": 14.81,
+    "dominant_hz": 552.7
    }
   ]
  },
@@ -1405,7 +1607,9 @@
     "recordist": "Manuel Grosselet - Eva Lepiz",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Mexico"
+    "country": "Mexico",
+    "tune_offset": -5.82,
+    "dominant_hz": 1819.1
    },
    {
     "file": "mockingbird_1.mp3",
@@ -1416,7 +1620,9 @@
     "recordist": "Scott Crabtree",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": -13.36,
+    "dominant_hz": 2813.3
    },
    {
     "file": "mockingbird_2.mp3",
@@ -1427,7 +1633,9 @@
     "recordist": "Scott Crabtree",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": -9.21,
+    "dominant_hz": 2213.0
    }
   ]
  },
@@ -1446,7 +1654,9 @@
     "recordist": "Esperanza Poveda",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": 1.48,
+    "dominant_hz": 1193.3
    },
    {
     "file": "raven_1.mp3",
@@ -1457,7 +1667,9 @@
     "recordist": "Greg Irving",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 2.29,
+    "dominant_hz": 1138.7
    },
    {
     "file": "raven_2.mp3",
@@ -1468,7 +1680,9 @@
     "recordist": "Esperanza Poveda",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": 15.0,
+    "dominant_hz": 390.2
    }
   ]
  },
@@ -1487,7 +1701,9 @@
     "recordist": "Marcin Przymencki",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -0.89,
+    "dominant_hz": 1368.6
    },
    {
     "file": "magpie_1.mp3",
@@ -1498,7 +1714,9 @@
     "recordist": "Marc Anderson",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 1.64,
+    "dominant_hz": 1182.8
    },
    {
     "file": "magpie_2.mp3",
@@ -1509,7 +1727,9 @@
     "recordist": "Nick Talbot",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": 4.08,
+    "dominant_hz": 1027.3
    }
   ]
  },
@@ -1528,7 +1748,9 @@
     "recordist": "Stephen Matthews",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -2.2,
+    "dominant_hz": 1476.1
    },
    {
     "file": "butcherbird_1.mp3",
@@ -1539,7 +1761,9 @@
     "recordist": "John McClean",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -3.88,
+    "dominant_hz": 1626.7
    },
    {
     "file": "butcherbird_2.mp3",
@@ -1550,7 +1774,9 @@
     "recordist": "Peter Boesman",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Australia"
+    "country": "Australia",
+    "tune_offset": -4.98,
+    "dominant_hz": 1733.7
    }
   ]
  },
@@ -1569,7 +1795,9 @@
     "recordist": "Scott Olmstead",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 12.95,
+    "dominant_hz": 615.3
    },
    {
     "file": "barredowl_1.mp3",
@@ -1580,7 +1808,9 @@
     "recordist": "Greg Irving",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 14.03,
+    "dominant_hz": 578.1
    },
    {
     "file": "barredowl_2.mp3",
@@ -1591,7 +1821,9 @@
     "recordist": "steve",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "United States of America"
+    "country": "United States of America",
+    "tune_offset": 13.08,
+    "dominant_hz": 610.7
    }
   ]
  },
@@ -1610,7 +1842,9 @@
     "recordist": "Pere Josa",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 4399.9
    },
    {
     "file": "barnowl_1.mp3",
@@ -1621,7 +1855,9 @@
     "recordist": "Pere Josa",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 4373.0
    },
    {
     "file": "barnowl_2.mp3",
@@ -1632,7 +1868,9 @@
     "recordist": "Pere Josa",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 4103.7
    }
   ]
  },
@@ -1651,7 +1889,9 @@
     "recordist": "Cedric Mroczko",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Spain"
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 4784.5
    },
    {
     "file": "blackbird_1.mp3",
@@ -1662,7 +1902,9 @@
     "recordist": "Johannes Worona",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Germany"
+    "country": "Germany",
+    "tune_offset": -15.0,
+    "dominant_hz": 4222.6
    },
    {
     "file": "blackbird_2.mp3",
@@ -1673,7 +1915,9 @@
     "recordist": "Morgan Demus",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "France"
+    "country": "France",
+    "tune_offset": -11.77,
+    "dominant_hz": 2565.2
    }
   ]
  },
@@ -1692,7 +1936,9 @@
     "recordist": "Stanislas Wroza",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Canada"
+    "country": "Canada",
+    "tune_offset": 8.02,
+    "dominant_hz": 818.2
    },
    {
     "file": "sandhill_1.mp3",
@@ -1703,7 +1949,9 @@
     "recordist": "Stanislas Wroza",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Canada"
+    "country": "Canada",
+    "tune_offset": 3.56,
+    "dominant_hz": 1058.5
    },
    {
     "file": "sandhill_2.mp3",
@@ -1714,7 +1962,9 @@
     "recordist": "Kalvin Chan",
     "license": "CC BY-NC 4.0",
     "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
-    "country": "Canada"
+    "country": "Canada",
+    "tune_offset": 14.64,
+    "dominant_hz": 558.0
    }
   ]
  }

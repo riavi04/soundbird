@@ -243,34 +243,76 @@ function encodeWav(audioBuffer) {
   return new Blob([ab], { type: "audio/wav" });
 }
 
-/* Happy Birthday, played on a bird. Public domain melody, so it can ship.
-   [semitones from tonic, beats] */
+/* Happy Birthday, sung by three birds. Public domain melody, so it can ship.
+   [semitones from tonic, beats, phrase] */
 const BIRTHDAY = [
-  [-5, 0.5], [-5, 0.5], [-3, 1], [-5, 1], [0, 1], [-1, 2],
-  [-5, 0.5], [-5, 0.5], [-3, 1], [-5, 1], [2, 1], [0, 2],
-  [-5, 0.5], [-5, 0.5], [7, 1], [4, 1], [0, 1], [-1, 1], [-3, 2],
-  [5, 0.5], [5, 0.5], [4, 1], [0, 1], [2, 1], [0, 2],
+  [-5, 0.5, 0], [-5, 0.5, 0], [-3, 1, 0], [-5, 1, 0], [0, 1, 0], [-1, 2, 0],
+  [-5, 0.5, 1], [-5, 0.5, 1], [-3, 1, 1], [-5, 1, 1], [2, 1, 1], [0, 2, 1],
+  [-5, 0.5, 2], [-5, 0.5, 2], [7, 1, 2], [4, 1, 2], [0, 1, 2], [-1, 1, 2], [-3, 2, 2],
+  [5, 0.5, 3], [5, 0.5, 3], [4, 1, 3], [0, 1, 3], [2, 1, 3], [0, 2, 3],
 ];
 
-async function playBirthday(birdKey, clipIdx = 0) {
+/* One bird per phrase, so each line of the song is sung by a different
+   species and the handover is audible. All three land together on the last
+   note. */
+const TUNE_BIRDS = ["penguin", "kookaburra", "ptarmigan", "kookaburra"];
+
+/* Pick the clip whose natural pitch is closest to the common reference, so
+   the transposition needed is as small as possible and the call still sounds
+   like the animal that made it. */
+function tuneVoice(key) {
+  const list = Player.buffers[key];
+  if (!list || !list.length) return null;
+  const meta = (window.BIRD_DATA || {})[key];
+  let index = 0, best = Infinity;
+  for (let i = 0; i < list.length; i++) {
+    const off = Math.abs((meta && meta.clips[i] && meta.clips[i].tune_offset) || 0);
+    if (off < best) { best = off; index = i; }
+  }
+  const offset = (meta && meta.clips[index] && meta.clips[index].tune_offset) || 0;
+  return { key, index, offset };
+}
+
+async function playBirthday() {
   await Player.resume();
   const ctx = Player.ctx;
-  const buf = Player.bufferFor(birdKey, clipIdx);
-  const graph = buildGraph(ctx, { reverb: 0.34, delay: 0.18 });
-  const bpm = 146;
+  const graph = buildGraph(ctx, { reverb: 0.32, delay: 0.14 });
+  const bpm = 132;
   const beat = 60 / bpm;
-  let t = ctx.currentTime + 0.15;
   const root = 52;
-  // A soft chord bed under the melody so it reads as music, not beeping.
-  pad(graph, t, [root, root + 7, root + 12], BIRTHDAY.reduce((a, n) => a + n[1], 0) * beat, 0.07);
-  for (const [semi, beats] of BIRTHDAY) {
-    if (buf) {
-      bird(graph, buf, t, { semitones: semi + 4, gain: 0.95, pan: 0, maxDur: beat * beats * 1.6 });
-    } else {
-      pluck(graph, t, root + 24 + semi, beat * beats * 0.9, 0.2);
-    }
-    pluck(graph, t, root + 12 + semi, Math.min(0.5, beat * beats * 0.8), 0.05);
-    t += beat * beats;
+
+  const fallback = Object.keys(Player.buffers)[0];
+  const voices = TUNE_BIRDS.map((k) =>
+    (Player.buffers[k] && Player.buffers[k].length) ? tuneVoice(k)
+      : (fallback ? tuneVoice(fallback) : null));
+  const finale = [];
+  for (const v of voices) {
+    if (v && !finale.some((f) => f.key === v.key)) finale.push(v);
   }
+
+  let t = ctx.currentTime + 0.15;
+  const total = BIRTHDAY.reduce((a, n) => a + n[1], 0) * beat;
+  // A soft chord bed under the melody so it reads as music, not beeping.
+  pad(graph, t, [root, root + 7, root + 12], total, 0.06);
+
+  BIRTHDAY.forEach(([semi, beats, phrase], i) => {
+    const dur = beats * beat;
+    const last = i === BIRTHDAY.length - 1;
+    const singing = last ? finale : [voices[phrase]].filter(Boolean);
+    singing.forEach((v, vi) => {
+      const buf = Player.bufferFor(v.key, v.index);
+      if (!buf) return;
+      bird(graph, buf, t, {
+        semitones: semi + v.offset,
+        gain: last ? 0.6 : 0.95,
+        pan: last && singing.length > 1 ? (vi / (singing.length - 1)) * 0.8 - 0.4 : 0,
+        // Each note is trimmed to its own length so the melody stays in time
+        // however long the underlying call happens to be.
+        maxDur: dur * (last ? 2.4 : 1.06),
+      });
+    });
+    pluck(graph, t, root + 12 + semi, Math.min(0.4, dur * 0.8), 0.04);
+    t += dur;
+  });
   return (t - ctx.currentTime) * 1000;
 }

@@ -126,22 +126,13 @@ function showCard(i) {
     if (c.tune) {
       await loadAll();
       await Player.resume();
-      const key = pickTuneBird();
-      const ms = await playBirthday(key, 0);
+      const ms = await playBirthday();
       animateVis(ms);
       setTimeout(() => { cardBusy = false; showCard(i + 1); }, ms + 900);
       return;
     }
     cardBusy = false;
   }, i === 0 ? 260 : 460);
-}
-
-/* A clean, short, bright clip carries a melody best. */
-function pickTuneBird() {
-  const prefer = ["quail", "piha", "bellbird", "crane", "starling", "ptarmigan"];
-  for (const p of prefer) if (Player.buffers[p] && Player.buffers[p].length) return p;
-  const any = playableBirds();
-  return any.length ? any[0][0] : null;
 }
 
 function animateVis(ms) {
