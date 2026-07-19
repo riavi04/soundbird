@@ -1,10 +1,13 @@
-# sound_bird_
+# soundbird
 
-A bird sound remix machine. Generates upbeat tracks from real wild bird
-recordings, or lets you build your own patterns by hand. Everything runs in the
-browser with no backend and no network access at runtime.
+**Live at <https://riavi04.github.io/soundbird/>**
 
-Built as a gift for Ben.
+A soundboard where every sound is a bird. Generates tracks from real wild bird
+recordings, or lets you build your own patterns by hand. 70 species, each with
+a photograph and a credit. Everything runs in the browser with no backend and
+no network access at runtime.
+
+To publish a change: `./deploy.sh "what changed"`. See [DEPLOY.md](DEPLOY.md).
 
 ## Layout
 
