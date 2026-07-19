@@ -39,9 +39,12 @@ publish, from this directory:
 ```sh
 gh auth login                       # once, in your own browser
 gh repo create soundbird --public --source=. --remote=origin --push
-gh api -X POST repos/:owner/soundbird/pages \
-  -f 'source[branch]=main' -f 'source[path]=/docs'
+echo '{"source":{"branch":"main","path":"/docs"}}' \
+  | gh api -X POST repos/:owner/soundbird/pages --input -
 ```
+
+If that last command is awkward, the repository's Settings page does the same
+thing: **Pages → Source: Deploy from a branch → main → /docs → Save**.
 
 The site then appears at `https://<your-username>.github.io/soundbird/`, usually
 within a minute or two.
