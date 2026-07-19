@@ -54,19 +54,19 @@ function euclid(k, n, rotate = 0) {
 const MOODS = {
   chill: {
     bpm: [90, 104], swing: 0.14, drumDensity: 0.4, birdDensity: 0.5,
-    reverb: 0.42, delay: 0.28, maxLanes: 3, pitchRange: [-4, 7],
+    reverb: 0.42, delay: 0.28, maxLanes: 5, pitchRange: [-4, 7],
     scale: SCALE_MINOR_PENTA, arp: 0.15, clipSteps: 8,
     support: 0.66, birdGain: 1.25, maxPerStep: 2, label: "chill",
   },
   upbeat: {
     bpm: [122, 136], swing: 0.09, drumDensity: 0.58, birdDensity: 0.75,
-    reverb: 0.26, delay: 0.3, maxLanes: 4, pitchRange: [-5, 10],
+    reverb: 0.26, delay: 0.3, maxLanes: 7, pitchRange: [-5, 10],
     scale: PENTA, arp: 0.3, clipSteps: 5,
     support: 0.7, birdGain: 1.2, maxPerStep: 2, label: "upbeat",
   },
   chaos: {
     bpm: [138, 156], swing: 0.05, drumDensity: 0.72, birdDensity: 0.9,
-    reverb: 0.2, delay: 0.4, maxLanes: 5, pitchRange: [-7, 12],
+    reverb: 0.2, delay: 0.4, maxLanes: 9, pitchRange: [-7, 12],
     scale: PENTA, arp: 0.35, clipSteps: 4,
     support: 0.64, birdGain: 1.25, maxPerStep: 3, label: "chaos",
   },

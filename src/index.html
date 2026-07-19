@@ -21,7 +21,7 @@
   <div class="card" id="card">
     <div class="tune-vis hide" id="tunevis"></div>
     <p id="cardtext"></p>
-    <button class="enter-btn hide" id="enterbtn">Open soundboard (or rather, sound<em>bird</em>, if you will :D)</button>
+    <button class="enter-btn hide" id="enterbtn">Open soundboard (or rather, sound<em>BIRD</em>, if you will :D)</button>
   </div>
   <div class="hint" id="hint">tap anywhere to continue</div>
 </div>
@@ -44,8 +44,8 @@
         <path d="M44 20l10-3-8 8"/>
       </svg>
       <div>
-        <h1>sound<span>_</span>bird<span>_</span></h1>
-        <div class="sub">a remix machine for Ben</div>
+        <h1>sound<span>bird</span></h1>
+        <div class="sub">a sound<s>board</s><b>bird</b>, for Ben</div>
       </div>
     </div>
     <nav class="tabs">
@@ -75,6 +75,9 @@
             <button data-pack="tropical">tropical</button>
             <button data-pack="weird">weird</button>
           </div>
+        </label>
+        <label class="fld">Speed <span id="tempolabel" style="color:var(--txt);font-family:var(--mono)">130 bpm</span>
+          <input type="range" id="temposlider" min="70" max="190" value="130">
         </label>
         <div class="grow"></div>
         <button class="btn primary" id="genbtn" style="align-self:flex-end">Generate a track</button>
@@ -153,7 +156,7 @@
   </section>
 
   <footer class="foot">
-    <div>All recordings come from <a href="https://xeno-canto.org" target="_blank" rel="noopener">xeno-canto</a>, a library of wild bird sound shared by recordists around the world, under Creative Commons licenses. Each clip credits its recordist and links back to the original. Clips have been trimmed, filtered and level matched for use here. Photographs come from Wikimedia Commons and are credited on each card.</div>
+    <div>All recordings come from <a href="https://xeno-canto.org" target="_blank" rel="noopener">xeno-canto</a>, a library of wild bird sound shared by recordists around the world, under Creative Commons licenses. Each clip credits its recordist and links back to the original. Clips have been trimmed, filtered and level matched for use here. Photographs come from Wikimedia Commons and are credited on each card. Set in EB Garamond by Georg Duffner and Octavio Pardo, under the SIL Open Font License.</div>
   </footer>
 </div>
 

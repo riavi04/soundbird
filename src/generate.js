@@ -61,7 +61,11 @@ function generateSong(seed, moodKey, birds, opts = {}) {
   seed = seed == null ? (Math.random() * 4294967295) >>> 0 : seed >>> 0;
   rnd.seed(seed);
 
-  const bpm = Math.round(rnd.f(m.bpm[1], m.bpm[0]));
+  // The random draw happens either way, so overriding the tempo does not
+  // reshuffle the rest of the song: the same seed keeps its arrangement and
+  // only the speed changes.
+  const autoBpm = Math.round(rnd.f(m.bpm[1], m.bpm[0]));
+  const bpm = opts.bpm ? Math.round(opts.bpm) : autoBpm;
   const barDur = (60 / bpm) * 4;
   const target = opts.seconds || 60;
   let bars = Math.round(target / barDur / 4) * 4;
@@ -117,64 +121,70 @@ function generateSong(seed, moodKey, birds, opts = {}) {
   ];
   const ROLE_GAIN = { lead: 1.0, answer: 0.82, texture: 0.6 };
 
-  const lanes = chosen.map((b, i) => {
-    const role = i === 0 ? "lead" : i === 1 ? "answer" : "texture";
-    let steps;
-    if (role === "lead") {
-      steps = rnd.pick(LEAD_STEPS).slice();
-    } else if (role === "answer") {
-      steps = rnd.pick(ANSWER_STEPS).slice();
-    } else {
-      // Rotated by whole eighths so texture still lands on the grid.
-      const k = Math.max(1, Math.round((1 + rnd.i(3)) * m.birdDensity));
-      const pat = euclid(k, 16, rnd.i(4) * 2);
-      steps = [];
-      for (let s = 0; s < 16; s++) if (pat[s]) steps.push(s);
-    }
-
-    const melodic = role === "lead" ? true : role === "answer" ? rnd.chance(0.6)
-                                                              : rnd.chance(0.2);
-    const motif = makeMotif(scale, m.pitchRange, 6);
-    const fixed = rnd.pick(scale);
-    const hits = steps.map((s, n) => ({
+  // Every lane learns all three parts. Which part it plays is decided per
+  // section, so the bird carrying the tune changes as the song goes on instead
+  // of one species being the whole theme from start to finish.
+  function hitsFor(steps, motif, fixed, melodic, role) {
+    return steps.map((s, n) => ({
       step: s,
       semi: melodic ? motif[n % motif.length] : fixed,
       // Accent the downbeat so the bar has an audible edge.
       gain: ROLE_GAIN[role] * (s === 0 ? 1.0 : s % 4 === 0 ? 0.92 : 0.78),
     }));
+  }
+
+  const lanes = chosen.map((b, i) => {
+    const motif = makeMotif(scale, m.pitchRange, 6);
+    const fixed = rnd.pick(scale);
+    // Rotated by whole eighths so texture still lands on the grid.
+    const k = Math.max(1, Math.round((1 + rnd.i(3)) * m.birdDensity));
+    const texPat = euclid(k, 16, rnd.i(4) * 2);
+    const texSteps = [];
+    for (let s = 0; s < 16; s++) if (texPat[s]) texSteps.push(s);
 
     return {
       id: `lane${i}`,
       bird: b.key,
       common: b.common,
       clip: rnd.i(b.clipCount),
-      melodic, role,
-      hits,
+      patterns: {
+        lead: hitsFor(rnd.pick(LEAD_STEPS), motif, fixed, true, "lead"),
+        answer: hitsFor(rnd.pick(ANSWER_STEPS), motif, fixed, rnd.chance(0.6), "answer"),
+        texture: hitsFor(texSteps, motif, fixed, rnd.chance(0.25), "texture"),
+      },
       pan: laneCount === 1 ? 0 : (i / (laneCount - 1)) * 1.1 - 0.55,
-      // Which sections this lane appears in, so the arrangement breathes.
-      enter: i === 0 ? 0 : rnd.i(3),
       muted: false,
       solo: false,
       gain: 1,
     };
   });
 
-  // Enforce the per-step cap, dropping from the quietest lanes first so the
-  // lead and answer keep their place.
-  const perStep = {};
-  for (const lane of lanes) {
-    if (lane.role === "lead" || lane.role === "answer") {
-      for (const h of lane.hits) perStep[h.step] = (perStep[h.step] || 0) + 1;
+  // A shuffled running order for the lead, so each section is fronted by a
+  // different bird and over a whole song most of the flock gets a turn.
+  const leadOrder = lanes.map((_, i) => i);
+  for (let i = leadOrder.length - 1; i > 0; i--) {
+    const j = rnd.i(i + 1);
+    const t = leadOrder[i]; leadOrder[i] = leadOrder[j]; leadOrder[j] = t;
+  }
+
+  const schedule = sections.map((sec, si) => {
+    const roles = {};
+    const n = lanes.length;
+    const lead = leadOrder[si % n];
+    roles[lanes[lead].id] = "lead";
+    if (sec.intensity >= 0.5 && n > 1) {
+      roles[lanes[leadOrder[(si + 1) % n]].id] = "answer";
     }
-  }
-  for (const lane of lanes) {
-    if (lane.role !== "texture") continue;
-    lane.hits = lane.hits.filter((h) => {
-      if ((perStep[h.step] || 0) >= m.maxPerStep) return false;
-      perStep[h.step] = (perStep[h.step] || 0) + 1;
-      return true;
-    });
-  }
+    const wantTexture = sec.intensity >= 0.9 ? 3 : sec.intensity >= 0.6 ? 2 : 0;
+    let added = 0;
+    for (let k = 2; k < n && added < wantTexture; k++) {
+      const id = lanes[leadOrder[(si + k) % n]].id;
+      if (roles[id]) continue;
+      roles[id] = "texture";
+      added++;
+    }
+    return roles;
+  });
 
   return {
     seed, mood: moodKey, bpm, swing: m.swing, bars: totalBars,
@@ -183,7 +193,8 @@ function generateSong(seed, moodKey, birds, opts = {}) {
     arp: rnd.f(1) < m.arp,
     reverb: m.reverb, delay: m.delay,
     support: m.support, birdGain: m.birdGain, clipSteps: m.clipSteps,
-    lanes,
+    maxPerStep: m.maxPerStep,
+    lanes, schedule,
     name: trackName(chosen.map((c) => c.common)),
     seconds: totalBars * barDur,
   };
@@ -274,22 +285,33 @@ function eventsForStep(song, absStep) {
     out.push({ type: "pluck", midi: note, gain: 0.055 * sup });
   }
 
-  // Birds
-  song.lanes.forEach((lane, li) => {
-    if (secIdx < lane.enter) return;
-    if (I < 0.4 && li > 1) return;
-    for (const h of lane.hits) {
+  // Birds. Each lane plays whichever part this section assigned it.
+  const roles = (song.schedule && song.schedule[secIdx]) || {};
+  const birds = [];
+  for (const lane of song.lanes) {
+    const role = roles[lane.id];
+    if (!role) continue;
+    const hits = lane.patterns[role] || [];
+    for (const h of hits) {
       if (h.step !== step) continue;
       // Thin out lanes in quiet sections instead of muting them outright.
       if (I < 0.6 && (h.step % 4 !== 0)) continue;
-      out.push({
+      birds.push({
         type: "bird", lane: lane.id, birdKey: lane.bird, clip: lane.clip,
         semitones: h.semi,
         gain: h.gain * (0.55 + 0.45 * I) * (song.birdGain ?? 1),
         pan: lane.pan,
       });
     }
-  });
+  }
+  // Hold the line on how many land together, keeping the loudest. Without this
+  // the extra lanes fill every gap again and the pulse disappears.
+  const cap = song.maxPerStep ?? 3;
+  if (birds.length > cap) {
+    birds.sort((a, b) => b.gain - a.gain);
+    birds.length = cap;
+  }
+  for (const b of birds) out.push(b);
 
   return out;
 }

@@ -1967,5 +1967,1274 @@
     "dominant_hz": 558.0
    }
   ]
+ },
+ "toucan": {
+  "common": "Toco Toucan",
+  "scientific": "Ramphastos toco",
+  "pack": "tropical",
+  "blurb": "The enormous bill is mostly hollow and works as a radiator. The call is a dry croaking grunt.",
+  "clips": [
+   {
+    "file": "toucan_0.mp3",
+    "duration": 0.569,
+    "score": 12.03,
+    "xc_id": "1050631",
+    "source": "https://xeno-canto.org/1050631",
+    "recordist": "Joost van Bruggen",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -4.21,
+    "dominant_hz": 1657.5
+   },
+   {
+    "file": "toucan_1.mp3",
+    "duration": 0.952,
+    "score": 5.23,
+    "xc_id": "1034552",
+    "source": "https://xeno-canto.org/1034552",
+    "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -13.61,
+    "dominant_hz": 2853.5
+   },
+   {
+    "file": "toucan_2.mp3",
+    "duration": 0.464,
+    "score": 4.5,
+    "xc_id": "1050630",
+    "source": "https://xeno-canto.org/1050630",
+    "recordist": "Joost van Bruggen",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -4.25,
+    "dominant_hz": 1662.1
+   }
+  ]
+ },
+ "keelbill": {
+  "common": "Keel-billed Toucan",
+  "scientific": "Ramphastos sulfuratus",
+  "pack": "tropical",
+  "blurb": "A rainbow bill and a frog-like croak. Flocks toss fruit to one another and fence with their beaks.",
+  "clips": [
+   {
+    "file": "keelbill_0.mp3",
+    "duration": 1.277,
+    "score": 14.49,
+    "xc_id": "927899",
+    "source": "https://xeno-canto.org/927899",
+    "recordist": "Richard E. Webster",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Mexico",
+    "tune_offset": -15.0,
+    "dominant_hz": 3705.9
+   },
+   {
+    "file": "keelbill_1.mp3",
+    "duration": 1.405,
+    "score": 14.22,
+    "xc_id": "1090026",
+    "source": "https://xeno-canto.org/1090026",
+    "recordist": "GABRIEL LEITE",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guatemala",
+    "tune_offset": 0.19,
+    "dominant_hz": 1285.6
+   },
+   {
+    "file": "keelbill_2.mp3",
+    "duration": 0.464,
+    "score": 3.49,
+    "xc_id": "1030185",
+    "source": "https://xeno-canto.org/1030185",
+    "recordist": "Manuel Grosselet",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Mexico",
+    "tune_offset": -5.41,
+    "dominant_hz": 1777.1
+   }
+  ]
+ },
+ "macaw": {
+  "common": "Scarlet Macaw",
+  "scientific": "Ara macao",
+  "pack": "tropical",
+  "blurb": "Screams that carry for miles over the canopy. Pairs fly wingtip to wingtip, calling the whole way.",
+  "clips": [
+   {
+    "file": "macaw_0.mp3",
+    "duration": 2.543,
+    "score": 11.13,
+    "xc_id": "1085672",
+    "source": "https://xeno-canto.org/1085672",
+    "recordist": "Paul Driver",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Costa Rica",
+    "tune_offset": -4.09,
+    "dominant_hz": 1646.0
+   },
+   {
+    "file": "macaw_1.mp3",
+    "duration": 0.975,
+    "score": 9.53,
+    "xc_id": "1085829",
+    "source": "https://xeno-canto.org/1085829",
+    "recordist": "Paul Driver",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Costa Rica",
+    "tune_offset": -6.33,
+    "dominant_hz": 1874.1
+   },
+   {
+    "file": "macaw_2.mp3",
+    "duration": 1.463,
+    "score": 6.34,
+    "xc_id": "1085671",
+    "source": "https://xeno-canto.org/1085671",
+    "recordist": "Paul Driver",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Costa Rica",
+    "tune_offset": -6.08,
+    "dominant_hz": 1847.0
+   }
+  ]
+ },
+ "blumacaw": {
+  "common": "Blue-and-yellow Macaw",
+  "scientific": "Ara ararauna",
+  "pack": "tropical",
+  "blurb": "A raucous throaty squawk from one of the loudest and longest-lived parrots in the Amazon.",
+  "clips": [
+   {
+    "file": "blumacaw_0.mp3",
+    "duration": 1.858,
+    "score": 28.79,
+    "xc_id": "1078075",
+    "source": "https://xeno-canto.org/1078075",
+    "recordist": "Carlos Delgado JUMABITA",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Colombia",
+    "tune_offset": -12.51,
+    "dominant_hz": 2678.1
+   },
+   {
+    "file": "blumacaw_1.mp3",
+    "duration": 1.057,
+    "score": 19.16,
+    "xc_id": "980714",
+    "source": "https://xeno-canto.org/980714",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador",
+    "tune_offset": -4.35,
+    "dominant_hz": 1671.0
+   },
+   {
+    "file": "blumacaw_2.mp3",
+    "duration": 0.998,
+    "score": 17.31,
+    "xc_id": "980715",
+    "source": "https://xeno-canto.org/980715",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador",
+    "tune_offset": -3.79,
+    "dominant_hz": 1618.3
+   }
+  ]
+ },
+ "oropendola": {
+  "common": "Montezuma Oropendola",
+  "scientific": "Psarocolius montezuma",
+  "pack": "tropical",
+  "blurb": "Hangs upside down off the branch to sing, producing a liquid gurgle that slides upward.",
+  "clips": [
+   {
+    "file": "oropendola_0.mp3",
+    "duration": 0.998,
+    "score": 20.43,
+    "xc_id": "1093058",
+    "source": "https://xeno-canto.org/1093058",
+    "recordist": "Manuel Grosselet",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Mexico",
+    "tune_offset": -15.0,
+    "dominant_hz": 4638.2
+   },
+   {
+    "file": "oropendola_1.mp3",
+    "duration": 1.068,
+    "score": 11.08,
+    "xc_id": "1090119",
+    "source": "https://xeno-canto.org/1090119",
+    "recordist": "GABRIEL LEITE",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guatemala",
+    "tune_offset": 9.53,
+    "dominant_hz": 749.8
+   },
+   {
+    "file": "oropendola_2.mp3",
+    "duration": 0.662,
+    "score": 6.52,
+    "xc_id": "998642",
+    "source": "https://xeno-canto.org/998642",
+    "recordist": "Stephan Risch",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Costa Rica",
+    "tune_offset": -15.0,
+    "dominant_hz": 4885.3
+   }
+  ]
+ },
+ "kiskadee": {
+  "common": "Great Kiskadee",
+  "scientific": "Pitangus sulphuratus",
+  "pack": "tropical",
+  "blurb": "Shouts its own name across gardens from Texas to Argentina, and rarely stops.",
+  "clips": [
+   {
+    "file": "kiskadee_0.mp3",
+    "duration": 1.718,
+    "score": 6.47,
+    "xc_id": "1074544",
+    "source": "https://xeno-canto.org/1074544",
+    "recordist": "GABRIEL LEITE",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -14.77,
+    "dominant_hz": 3050.3
+   },
+   {
+    "file": "kiskadee_1.mp3",
+    "duration": 0.58,
+    "score": 5.93,
+    "xc_id": "1080134",
+    "source": "https://xeno-canto.org/1080134",
+    "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -15.0,
+    "dominant_hz": 3205.9
+   },
+   {
+    "file": "kiskadee_2.mp3",
+    "duration": 0.94,
+    "score": 2.44,
+    "xc_id": "1084029",
+    "source": "https://xeno-canto.org/1084029",
+    "recordist": "Burooj Ghani",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Suriname",
+    "tune_offset": -15.0,
+    "dominant_hz": 4087.9
+   }
+  ]
+ },
+ "koel": {
+  "common": "Asian Koel",
+  "scientific": "Eudynamys scolopaceus",
+  "pack": "tropical",
+  "blurb": "A rising ko-el repeated through the hot season, loud enough to be treated as a public nuisance.",
+  "clips": [
+   {
+    "file": "koel_0.mp3",
+    "duration": 1.637,
+    "score": 14.34,
+    "xc_id": "1071405",
+    "source": "https://xeno-canto.org/1071405",
+    "recordist": "Lim Ying Hien \u6797\u52c7\u8d24",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Malaysia",
+    "tune_offset": -9.05,
+    "dominant_hz": 2192.8
+   },
+   {
+    "file": "koel_1.mp3",
+    "duration": 2.334,
+    "score": 8.27,
+    "xc_id": "1070790",
+    "source": "https://xeno-canto.org/1070790",
+    "recordist": "Albert Noorlander",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Thailand",
+    "tune_offset": -10.0,
+    "dominant_hz": 2315.9
+   },
+   {
+    "file": "koel_2.mp3",
+    "duration": 0.534,
+    "score": 5.52,
+    "xc_id": "1078430",
+    "source": "https://xeno-canto.org/1078430",
+    "recordist": "Thet Zaw Naing",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Myanmar",
+    "tune_offset": -2.67,
+    "dominant_hz": 1516.4
+   }
+  ]
+ },
+ "drongo": {
+  "common": "Greater Racket-tailed Drongo",
+  "scientific": "Dicrurus paradiseus",
+  "pack": "tropical",
+  "blurb": "Mimics other birds' alarm calls to frighten them off their food, then helps itself.",
+  "clips": [
+   {
+    "file": "drongo_0.mp3",
+    "duration": 1.695,
+    "score": 27.91,
+    "xc_id": "1079759",
+    "source": "https://xeno-canto.org/1079759",
+    "recordist": "Jerome Fischer",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "India",
+    "tune_offset": -13.37,
+    "dominant_hz": 2813.3
+   },
+   {
+    "file": "drongo_1.mp3",
+    "duration": 1.3,
+    "score": 25.57,
+    "xc_id": "1079637",
+    "source": "https://xeno-canto.org/1079637",
+    "recordist": "Jerome Fischer",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "India",
+    "tune_offset": -8.85,
+    "dominant_hz": 2167.4
+   },
+   {
+    "file": "drongo_2.mp3",
+    "duration": 0.464,
+    "score": 1.37,
+    "xc_id": "1088140",
+    "source": "https://xeno-canto.org/1088140",
+    "recordist": "Joan Theng",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Singapore",
+    "tune_offset": -15.0,
+    "dominant_hz": 3558.5
+   }
+  ]
+ },
+ "cockofrock": {
+  "common": "Andean Cock-of-the-rock",
+  "scientific": "Rupicola peruvianus",
+  "pack": "tropical",
+  "blurb": "Brilliant orange males gather at a lek and squeal at each other like startled pigs.",
+  "clips": [
+   {
+    "file": "cockofrock_0.mp3",
+    "duration": 1.254,
+    "score": 9.84,
+    "xc_id": "1084152",
+    "source": "https://xeno-canto.org/1084152",
+    "recordist": "Aladdin",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Bolivia (Plurinational State of)",
+    "tune_offset": -4.47,
+    "dominant_hz": 1683.1
+   },
+   {
+    "file": "cockofrock_1.mp3",
+    "duration": 2.543,
+    "score": 4.45,
+    "xc_id": "1084153",
+    "source": "https://xeno-canto.org/1084153",
+    "recordist": "Aladdin",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Bolivia (Plurinational State of)",
+    "tune_offset": -15.0,
+    "dominant_hz": 3134.8
+   },
+   {
+    "file": "cockofrock_2.mp3",
+    "duration": 0.464,
+    "score": 1.55,
+    "xc_id": "1084151",
+    "source": "https://xeno-canto.org/1084151",
+    "recordist": "Aladdin",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Bolivia (Plurinational State of)",
+    "tune_offset": -5.11,
+    "dominant_hz": 1745.9
+   }
+  ]
+ },
+ "limpkin": {
+  "common": "Limpkin",
+  "scientific": "Aramus guarauna",
+  "pack": "tropical",
+  "blurb": "A wailing scream over the swamp at night. Film sound crews have used it for jungles and dinosaurs.",
+  "clips": [
+   {
+    "file": "limpkin_0.mp3",
+    "duration": 0.464,
+    "score": 8.85,
+    "xc_id": "976485",
+    "source": "https://xeno-canto.org/976485",
+    "recordist": "John A. Middleton Jr.",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America",
+    "tune_offset": 1.14,
+    "dominant_hz": 1216.9
+   },
+   {
+    "file": "limpkin_1.mp3",
+    "duration": 0.627,
+    "score": 4.26,
+    "xc_id": "1120055",
+    "source": "https://xeno-canto.org/1120055",
+    "recordist": "Marcos E. Sosa",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Argentina",
+    "tune_offset": -15.0,
+    "dominant_hz": 4961.7
+   },
+   {
+    "file": "limpkin_2.mp3",
+    "duration": 2.543,
+    "score": 3.28,
+    "xc_id": "1120047",
+    "source": "https://xeno-canto.org/1120047",
+    "recordist": "Marcos E. Sosa",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Argentina",
+    "tune_offset": 15.0,
+    "dominant_hz": 150.7
+   }
+  ]
+ },
+ "tinamou": {
+  "common": "Great Tinamou",
+  "scientific": "Tinamus major",
+  "pack": "tropical",
+  "blurb": "A pure quavering whistle at dusk from the forest floor, closer to a flute than to a bird.",
+  "clips": [
+   {
+    "file": "tinamou_0.mp3",
+    "duration": 1.231,
+    "score": 11.66,
+    "xc_id": "982173",
+    "source": "https://xeno-canto.org/982173",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador",
+    "tune_offset": 0.85,
+    "dominant_hz": 1238.0
+   },
+   {
+    "file": "tinamou_1.mp3",
+    "duration": 1.335,
+    "score": 7.43,
+    "xc_id": "979865",
+    "source": "https://xeno-canto.org/979865",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador",
+    "tune_offset": -0.21,
+    "dominant_hz": 1315.8
+   },
+   {
+    "file": "tinamou_2.mp3",
+    "duration": 0.65,
+    "score": 2.23,
+    "xc_id": "1079796",
+    "source": "https://xeno-canto.org/1079796",
+    "recordist": "Stijn Nollen",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Suriname",
+    "tune_offset": -1.44,
+    "dominant_hz": 1412.5
+   }
+  ]
+ },
+ "motmot": {
+  "common": "Amazonian Motmot",
+  "scientific": "Momotus momota",
+  "pack": "tropical",
+  "blurb": "A soft double hoot at dawn, and a racket-tipped tail it swings beneath the branch like a pendulum.",
+  "clips": [
+   {
+    "file": "motmot_0.mp3",
+    "duration": 0.673,
+    "score": 3.27,
+    "xc_id": "985509",
+    "source": "https://xeno-canto.org/985509",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador",
+    "tune_offset": -15.0,
+    "dominant_hz": 4083.3
+   },
+   {
+    "file": "motmot_1.mp3",
+    "duration": 0.522,
+    "score": 1.9,
+    "xc_id": "971814",
+    "source": "https://xeno-canto.org/971814",
+    "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -4.25,
+    "dominant_hz": 1662.1
+   },
+   {
+    "file": "motmot_2.mp3",
+    "duration": 2.543,
+    "score": 1.52,
+    "xc_id": "960458",
+    "source": "https://xeno-canto.org/960458",
+    "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": 15.0,
+    "dominant_hz": 407.6
+   }
+  ]
+ },
+ "quetzal": {
+  "common": "Resplendent Quetzal",
+  "scientific": "Pharomachrus mocinno",
+  "pack": "tropical",
+  "blurb": "Sacred to the Maya. A soft whimpering call, and tail streamers twice the length of the bird.",
+  "clips": [
+   {
+    "file": "quetzal_0.mp3",
+    "duration": 0.464,
+    "score": 11.41,
+    "xc_id": "872148",
+    "source": "https://xeno-canto.org/872148",
+    "recordist": "Leander Khil",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guatemala",
+    "tune_offset": 5.09,
+    "dominant_hz": 968.6
+   },
+   {
+    "file": "quetzal_1.mp3",
+    "duration": 0.464,
+    "score": 2.86,
+    "xc_id": "1089644",
+    "source": "https://xeno-canto.org/1089644",
+    "recordist": "GABRIEL LEITE",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guatemala",
+    "tune_offset": 4.0,
+    "dominant_hz": 1031.7
+   },
+   {
+    "file": "quetzal_2.mp3",
+    "duration": 0.464,
+    "score": 2.72,
+    "xc_id": "964401",
+    "source": "https://xeno-canto.org/964401",
+    "recordist": "Bill Pyle",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guatemala",
+    "tune_offset": 2.56,
+    "dominant_hz": 1121.3
+   }
+  ]
+ },
+ "barebellbird": {
+  "common": "Bare-throated Bellbird",
+  "scientific": "Procnias nudicollis",
+  "pack": "tropical",
+  "blurb": "A third bellbird striking its hammer note, this one with bare turquoise skin around the throat.",
+  "clips": [
+   {
+    "file": "barebellbird_0.mp3",
+    "duration": 0.464,
+    "score": 8.36,
+    "xc_id": "1015271",
+    "source": "https://xeno-canto.org/1015271",
+    "recordist": "Rodrigo Dela Rosa",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -2.42,
+    "dominant_hz": 1494.8
+   },
+   {
+    "file": "barebellbird_1.mp3",
+    "duration": 0.464,
+    "score": 5.28,
+    "xc_id": "1036340",
+    "source": "https://xeno-canto.org/1036340",
+    "recordist": "Teus Luijendijk",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -2.74,
+    "dominant_hz": 1522.9
+   },
+   {
+    "file": "barebellbird_2.mp3",
+    "duration": 1.161,
+    "score": 4.5,
+    "xc_id": "883504",
+    "source": "https://xeno-canto.org/883504",
+    "recordist": "Daniel Capella",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": 15.0,
+    "dominant_hz": 150.7
+   }
+  ]
+ },
+ "sunbittern": {
+  "common": "Sunbittern",
+  "scientific": "Eurypyga helias",
+  "pack": "tropical",
+  "blurb": "Throws its wings open to flash two enormous eyespots. The call is a thin drawn-out whistle.",
+  "clips": [
+   {
+    "file": "sunbittern_0.mp3",
+    "duration": 1.324,
+    "score": 29.14,
+    "xc_id": "1074186",
+    "source": "https://xeno-canto.org/1074186",
+    "recordist": "Fernando Igor de Godoy",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -4.67,
+    "dominant_hz": 1702.7
+   },
+   {
+    "file": "sunbittern_1.mp3",
+    "duration": 0.987,
+    "score": 23.35,
+    "xc_id": "912036",
+    "source": "https://xeno-canto.org/912036",
+    "recordist": "rudy gelis",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador",
+    "tune_offset": -10.45,
+    "dominant_hz": 2377.2
+   },
+   {
+    "file": "sunbittern_2.mp3",
+    "duration": 0.755,
+    "score": 22.13,
+    "xc_id": "1050624",
+    "source": "https://xeno-canto.org/1050624",
+    "recordist": "Joost van Bruggen",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil",
+    "tune_offset": -5.94,
+    "dominant_hz": 1831.8
+   }
+  ]
+ },
+ "robin": {
+  "common": "European Robin",
+  "scientific": "Erithacus rubecula",
+  "pack": "classic",
+  "blurb": "Sings all winter and often at night under streetlights. Both sexes hold territory and both sing.",
+  "clips": [
+   {
+    "file": "robin_0.mp3",
+    "duration": 0.58,
+    "score": 12.38,
+    "xc_id": "1074568",
+    "source": "https://xeno-canto.org/1074568",
+    "recordist": "Laura Martin",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France",
+    "tune_offset": -15.0,
+    "dominant_hz": 4995.7
+   },
+   {
+    "file": "robin_1.mp3",
+    "duration": 0.871,
+    "score": 5.28,
+    "xc_id": "1074426",
+    "source": "https://xeno-canto.org/1074426",
+    "recordist": "Nelson Concei\u00e7\u00e3o",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Portugal",
+    "tune_offset": 11.09,
+    "dominant_hz": 684.9
+   },
+   {
+    "file": "robin_2.mp3",
+    "duration": 1.103,
+    "score": 1.83,
+    "xc_id": "1074955",
+    "source": "https://xeno-canto.org/1074955",
+    "recordist": "Adrien Peillon",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France",
+    "tune_offset": 15.0,
+    "dominant_hz": 205.9
+   }
+  ]
+ },
+ "songthrush": {
+  "common": "Song Thrush",
+  "scientific": "Turdus philomelos",
+  "pack": "classic",
+  "blurb": "Repeats every phrase two or three times over, which is how to tell it from a blackbird.",
+  "clips": [
+   {
+    "file": "songthrush_0.mp3",
+    "duration": 0.731,
+    "score": 8.73,
+    "xc_id": "1074429",
+    "source": "https://xeno-canto.org/1074429",
+    "recordist": "Nelson Concei\u00e7\u00e3o",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Portugal",
+    "tune_offset": -15.0,
+    "dominant_hz": 3819.7
+   },
+   {
+    "file": "songthrush_1.mp3",
+    "duration": 0.604,
+    "score": 7.52,
+    "xc_id": "1078744",
+    "source": "https://xeno-canto.org/1078744",
+    "recordist": "David Darrell-Lambert",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "tune_offset": -15.0,
+    "dominant_hz": 4694.2
+   },
+   {
+    "file": "songthrush_2.mp3",
+    "duration": 0.789,
+    "score": 2.94,
+    "xc_id": "1078745",
+    "source": "https://xeno-canto.org/1078745",
+    "recordist": "David Darrell-Lambert",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "tune_offset": -15.0,
+    "dominant_hz": 4339.4
+   }
+  ]
+ },
+ "wren": {
+  "common": "Eurasian Wren",
+  "scientific": "Troglodytes troglodytes",
+  "pack": "classic",
+  "blurb": "Tiny, and absurdly loud for it: a machine-gun trill delivered from deep inside a hedge.",
+  "clips": [
+   {
+    "file": "wren_0.mp3",
+    "duration": 0.464,
+    "score": 2.57,
+    "xc_id": "1074938",
+    "source": "https://xeno-canto.org/1074938",
+    "recordist": "Jordi Calvet",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 4918.4
+   },
+   {
+    "file": "wren_1.mp3",
+    "duration": 2.543,
+    "score": 2.56,
+    "xc_id": "1073192",
+    "source": "https://xeno-canto.org/1073192",
+    "recordist": "Astrid Cervantes",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Belgium",
+    "tune_offset": 15.0,
+    "dominant_hz": 179.3
+   },
+   {
+    "file": "wren_2.mp3",
+    "duration": 2.543,
+    "score": 1.66,
+    "xc_id": "1074607",
+    "source": "https://xeno-canto.org/1074607",
+    "recordist": "Colm Philpott",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ireland",
+    "tune_offset": 15.0,
+    "dominant_hz": 250.9
+   }
+  ]
+ },
+ "curlew": {
+  "common": "Eurasian Curlew",
+  "scientific": "Numenius arquata",
+  "pack": "classic",
+  "blurb": "A rising bubbling call across moorland, one of the most mournful sounds in Britain.",
+  "clips": [
+   {
+    "file": "curlew_0.mp3",
+    "duration": 0.975,
+    "score": 10.8,
+    "xc_id": "1074577",
+    "source": "https://xeno-canto.org/1074577",
+    "recordist": "Cureau Herv\u00e9",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France",
+    "tune_offset": -4.53,
+    "dominant_hz": 1688.4
+   },
+   {
+    "file": "curlew_1.mp3",
+    "duration": 0.464,
+    "score": 4.51,
+    "xc_id": "1070955",
+    "source": "https://xeno-canto.org/1070955",
+    "recordist": "Paul Kelly",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ireland",
+    "tune_offset": -4.15,
+    "dominant_hz": 1651.8
+   },
+   {
+    "file": "curlew_2.mp3",
+    "duration": 2.543,
+    "score": 4.03,
+    "xc_id": "1077693",
+    "source": "https://xeno-canto.org/1077693",
+    "recordist": "Francesco Sottile",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Italy",
+    "tune_offset": 15.0,
+    "dominant_hz": 150.7
+   }
+  ]
+ },
+ "tawnyowl": {
+  "common": "Tawny Owl",
+  "scientific": "Strix aluco",
+  "pack": "classic",
+  "blurb": "The famous twit-twoo is two birds, not one: the female calls and the male answers.",
+  "clips": [
+   {
+    "file": "tawnyowl_0.mp3",
+    "duration": 0.906,
+    "score": 18.79,
+    "xc_id": "1076320",
+    "source": "https://xeno-canto.org/1076320",
+    "recordist": "Cedric Mroczko",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France",
+    "tune_offset": 10.49,
+    "dominant_hz": 709.3
+   },
+   {
+    "file": "tawnyowl_1.mp3",
+    "duration": 0.65,
+    "score": 9.9,
+    "xc_id": "1074284",
+    "source": "https://xeno-canto.org/1074284",
+    "recordist": "Dag \u00d6sterlund",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Sweden",
+    "tune_offset": -14.91,
+    "dominant_hz": 3075.0
+   },
+   {
+    "file": "tawnyowl_2.mp3",
+    "duration": 1.672,
+    "score": 6.15,
+    "xc_id": "1075017",
+    "source": "https://xeno-canto.org/1075017",
+    "recordist": "Martin Minarik",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "tune_offset": 7.69,
+    "dominant_hz": 833.6
+   }
+  ]
+ },
+ "greenwood": {
+  "common": "European Green Woodpecker",
+  "scientific": "Picus viridis",
+  "pack": "classic",
+  "blurb": "Rarely drums. It laughs instead, a ringing yaffle that gave the bird its old country name.",
+  "clips": [
+   {
+    "file": "greenwood_0.mp3",
+    "duration": 0.708,
+    "score": 20.11,
+    "xc_id": "1072393",
+    "source": "https://xeno-canto.org/1072393",
+    "recordist": "Lionel FREDERIC",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France",
+    "tune_offset": -8.02,
+    "dominant_hz": 2066.4
+   },
+   {
+    "file": "greenwood_1.mp3",
+    "duration": 0.662,
+    "score": 7.39,
+    "xc_id": "1072616",
+    "source": "https://xeno-canto.org/1072616",
+    "recordist": "Johannes Worona",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Germany",
+    "tune_offset": -7.36,
+    "dominant_hz": 1988.8
+   },
+   {
+    "file": "greenwood_2.mp3",
+    "duration": 1.057,
+    "score": 2.65,
+    "xc_id": "1084631",
+    "source": "https://xeno-canto.org/1084631",
+    "recordist": "Johannes Worona",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Germany",
+    "tune_offset": -6.45,
+    "dominant_hz": 1887.1
+   }
+  ]
+ },
+ "woodthrush": {
+  "common": "Wood Thrush",
+  "scientific": "Hylocichla mustelina",
+  "pack": "classic",
+  "blurb": "Sings two notes at once using both sides of its syrinx, harmonizing with itself.",
+  "clips": [
+   {
+    "file": "woodthrush_0.mp3",
+    "duration": 0.464,
+    "score": 10.37,
+    "xc_id": "1069982",
+    "source": "https://xeno-canto.org/1069982",
+    "recordist": "Max Noack",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guatemala",
+    "tune_offset": 15.0,
+    "dominant_hz": 236.3
+   },
+   {
+    "file": "woodthrush_1.mp3",
+    "duration": 2.543,
+    "score": 8.85,
+    "xc_id": "1090111",
+    "source": "https://xeno-canto.org/1090111",
+    "recordist": "GABRIEL LEITE",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guatemala",
+    "tune_offset": -8.67,
+    "dominant_hz": 2145.5
+   },
+   {
+    "file": "woodthrush_2.mp3",
+    "duration": 1.045,
+    "score": 5.05,
+    "xc_id": "1106488",
+    "source": "https://xeno-canto.org/1106488",
+    "recordist": "Bill Pyle",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America",
+    "tune_offset": -15.0,
+    "dominant_hz": 3757.8
+   }
+  ]
+ },
+ "cardinal": {
+  "common": "Northern Cardinal",
+  "scientific": "Cardinalis cardinalis",
+  "pack": "classic",
+  "blurb": "Clear slurred whistles. Females sing too, often from the nest, which is unusual among songbirds.",
+  "clips": [
+   {
+    "file": "cardinal_0.mp3",
+    "duration": 2.101,
+    "score": 15.33,
+    "xc_id": "1080763",
+    "source": "https://xeno-canto.org/1080763",
+    "recordist": "Scott Olmstead",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America",
+    "tune_offset": -15.0,
+    "dominant_hz": 4099.4
+   },
+   {
+    "file": "cardinal_1.mp3",
+    "duration": 0.848,
+    "score": 8.67,
+    "xc_id": "1083721",
+    "source": "https://xeno-canto.org/1083721",
+    "recordist": "Scott Olmstead",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America",
+    "tune_offset": -10.2,
+    "dominant_hz": 2342.6
+   },
+   {
+    "file": "cardinal_2.mp3",
+    "duration": 0.662,
+    "score": 5.77,
+    "xc_id": "1074340",
+    "source": "https://xeno-canto.org/1074340",
+    "recordist": "Scott Crabtree",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America",
+    "tune_offset": -15.0,
+    "dominant_hz": 3858.2
+   }
+  ]
+ },
+ "bluejay": {
+  "common": "Blue Jay",
+  "scientific": "Cyanocitta cristata",
+  "pack": "classic",
+  "blurb": "Screams like a hawk to clear everyone off the feeder, then helps itself in the quiet.",
+  "clips": [
+   {
+    "file": "bluejay_0.mp3",
+    "duration": 1.045,
+    "score": 11.11,
+    "xc_id": "1090405",
+    "source": "https://xeno-canto.org/1090405",
+    "recordist": "Dana Siefer",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America",
+    "tune_offset": -15.0,
+    "dominant_hz": 3446.3
+   },
+   {
+    "file": "bluejay_1.mp3",
+    "duration": 0.464,
+    "score": 8.23,
+    "xc_id": "1088329",
+    "source": "https://xeno-canto.org/1088329",
+    "recordist": "Paul Driver",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America",
+    "tune_offset": -15.0,
+    "dominant_hz": 3107.5
+   },
+   {
+    "file": "bluejay_2.mp3",
+    "duration": 0.546,
+    "score": 4.79,
+    "xc_id": "1087207",
+    "source": "https://xeno-canto.org/1087207",
+    "recordist": "David A. Brinkman",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America",
+    "tune_offset": -10.61,
+    "dominant_hz": 2399.8
+   }
+  ]
+ },
+ "whippoorwill": {
+  "common": "Eastern Whip-poor-will",
+  "scientific": "Antrostomus vociferus",
+  "pack": "weird",
+  "blurb": "Says its own name after dark, hundreds of times without pausing for breath.",
+  "clips": [
+   {
+    "file": "whippoorwill_0.mp3",
+    "duration": 0.592,
+    "score": 8.56,
+    "xc_id": "1014020",
+    "source": "https://xeno-canto.org/1014020",
+    "recordist": "Stanislas Wroza",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Canada",
+    "tune_offset": -3.69,
+    "dominant_hz": 1609.2
+   },
+   {
+    "file": "whippoorwill_1.mp3",
+    "duration": 0.627,
+    "score": 5.83,
+    "xc_id": "1014019",
+    "source": "https://xeno-canto.org/1014019",
+    "recordist": "Stanislas Wroza",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Canada",
+    "tune_offset": -3.86,
+    "dominant_hz": 1624.3
+   },
+   {
+    "file": "whippoorwill_2.mp3",
+    "duration": 0.615,
+    "score": 5.49,
+    "xc_id": "1014018",
+    "source": "https://xeno-canto.org/1014018",
+    "recordist": "Stanislas Wroza",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Canada",
+    "tune_offset": -3.83,
+    "dominant_hz": 1622.4
+   }
+  ]
+ },
+ "snipe": {
+  "common": "Common Snipe",
+  "scientific": "Gallinago gallinago",
+  "pack": "weird",
+  "blurb": "Dives in display so its outer tail feathers vibrate, making an eerie bleat known as drumming.",
+  "clips": [
+   {
+    "file": "snipe_0.mp3",
+    "duration": 0.464,
+    "score": 1.38,
+    "xc_id": "1073021",
+    "source": "https://xeno-canto.org/1073021",
+    "recordist": "Paul Kelly",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ireland",
+    "tune_offset": -15.0,
+    "dominant_hz": 3479.5
+   },
+   {
+    "file": "snipe_1.mp3",
+    "duration": 0.464,
+    "score": 1.32,
+    "xc_id": "1070603",
+    "source": "https://xeno-canto.org/1070603",
+    "recordist": "Lionel FREDERIC",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France",
+    "tune_offset": -15.0,
+    "dominant_hz": 3155.1
+   },
+   {
+    "file": "snipe_2.mp3",
+    "duration": 0.464,
+    "score": 1.15,
+    "xc_id": "1102063",
+    "source": "https://xeno-canto.org/1102063",
+    "recordist": "Romain Bazire",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France",
+    "tune_offset": -7.11,
+    "dominant_hz": 1959.8
+   }
+  ]
+ },
+ "hoopoe": {
+  "common": "Hoopoe",
+  "scientific": "Upupa epops",
+  "pack": "weird",
+  "blurb": "A soft oop-oop-oop that carries a surprising distance, and a crest it raises like a fan.",
+  "clips": [
+   {
+    "file": "hoopoe_0.mp3",
+    "duration": 0.72,
+    "score": 14.13,
+    "xc_id": "1081453",
+    "source": "https://xeno-canto.org/1081453",
+    "recordist": "Peter Boesman",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Senegal",
+    "tune_offset": 10.58,
+    "dominant_hz": 705.6
+   },
+   {
+    "file": "hoopoe_1.mp3",
+    "duration": 0.917,
+    "score": 11.45,
+    "xc_id": "1081452",
+    "source": "https://xeno-canto.org/1081452",
+    "recordist": "Peter Boesman",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Senegal",
+    "tune_offset": 13.35,
+    "dominant_hz": 601.2
+   },
+   {
+    "file": "hoopoe_2.mp3",
+    "duration": 0.987,
+    "score": 9.83,
+    "xc_id": "1084676",
+    "source": "https://xeno-canto.org/1084676",
+    "recordist": "Jo\u00e3o Tom\u00e1s",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Spain",
+    "tune_offset": -15.0,
+    "dominant_hz": 3898.9
+   }
+  ]
  }
 }

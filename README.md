@@ -93,6 +93,12 @@ names its photographer. Note that most are ShareAlike, and cropping counts as
 making an adaptation. That is fine as it stands, but if this ever gets
 published somewhere public, the ShareAlike terms travel with those images.
 
+The page is set in **EB Garamond**, under the SIL Open Font License, inlined as
+a data URI because the page's CSP blocks font CDNs and a linked webfont would
+fail silently into a fallback. Only the Latin subset is embedded, which is
+about 68 KB across the regular and italic faces. The OFL requires the license
+to travel with the font, so the footer carries the notice.
+
 ## Notes
 
 - The shoebill was requested but has no recordings on xeno-canto at all, and

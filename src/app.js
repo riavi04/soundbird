@@ -9,6 +9,7 @@ const $$ = (s) => Array.from(document.querySelectorAll(s));
 let currentSong = null;
 let curMood = "upbeat";
 let curPack = "all";
+let curTempo = 130;          // what the speed slider is set to, in bpm
 let loaded = false;
 let loadPromise = null;
 
@@ -176,11 +177,36 @@ function enterApp() {
 function generate(play = true) {
   const pool = poolFor(curPack);
   if (pool.length < 2) { toast("Not enough birds in that flock"); return; }
-  currentSong = generateSong(null, curMood, pool);
+  currentSong = generateSong(null, curMood, pool, { bpm: curTempo });
+  currentSong.pack = curPack;
   renderNow();
   renderLanes();
   if (play) startPlayback();
   else setPlayIcon(false);
+}
+
+/* Moving the speed slider keeps the arrangement and changes only the tempo,
+   so it stays recognisably the same track. */
+function retempo() {
+  if (!currentSong) return;
+  const wasPlaying = Player.playing && Player.mode === "song";
+  const pack = currentSong.pack || curPack;
+  const pool = poolFor(pack);
+  if (pool.length < 2) return;
+  currentSong = generateSong(currentSong.seed, currentSong.mood, pool, { bpm: curTempo });
+  currentSong.pack = pack;
+  renderNow();
+  renderLanes();
+  if (wasPlaying) startPlayback();
+}
+
+function setTempo(bpm, retrigger) {
+  curTempo = Math.round(bpm);
+  const slider = $("#temposlider");
+  if (slider) slider.value = curTempo;
+  const label = $("#tempolabel");
+  if (label) label.textContent = curTempo + " bpm";
+  if (retrigger) retempo();
 }
 
 function renderNow() {
@@ -193,11 +219,19 @@ function renderNow() {
   $("#dlbtn").disabled = false;
 }
 
-const ROLE_LABEL = {
-  lead: "lead, on the beat",
-  answer: "answers between beats",
-  texture: "texture",
-};
+/* Which parts of the song a bird actually appears in, so the list says
+   something useful now that roles move around between sections. */
+function laneParts(song, lane) {
+  const seen = [];
+  (song.schedule || []).forEach((roles, i) => {
+    const r = roles[lane.id];
+    if (r) seen.push(r);
+  });
+  if (!seen.length) return "resting";
+  const leads = seen.filter((r) => r === "lead").length;
+  if (leads) return leads > 1 ? `leads ${leads} parts` : "leads a part";
+  return seen.includes("answer") ? "answers" : "texture";
+}
 
 function renderLanes() {
   const box = $("#lanes");
@@ -210,8 +244,7 @@ function renderLanes() {
     const sp = BIRDS[lane.bird] || {};
     row.innerHTML = `
       <span class="pip"></span>
-      <div class="nm">${lane.common}<small>${sp.scientific || ""}${
-        lane.role ? " · " + ROLE_LABEL[lane.role] : ""}</small></div>
+      <div class="nm">${lane.common}<small>${sp.scientific || ""} · ${laneParts(currentSong, lane)}</small></div>
       <button class="tog solo" title="solo">S</button>
       <button class="tog mute" title="mute">M</button>`;
     row.querySelector(".solo").onclick = () => {
@@ -254,12 +287,16 @@ async function startPlayback() {
   Player.onStep = (step, total) => {
     $("#progress").style.width = Math.min(100, (step / total) * 100) + "%";
     const s = step % STEPS_PER_BAR;
+    // A lane only lights up for the part it is playing in this section.
+    const sec = sectionAt(currentSong, Math.floor(step / STEPS_PER_BAR));
+    const roles = (currentSong.schedule || [])[currentSong.sections.indexOf(sec)] || {};
     currentSong.lanes.forEach((lane) => {
       const row = $(`.lane[data-lane="${lane.id}"]`);
       if (!row) return;
-      const hit = lane.hits.some((h) => h.step === s);
-      const pip = row.querySelector(".pip");
-      pip.classList.toggle("hit", hit);
+      const role = roles[lane.id];
+      const hit = !!role && lane.patterns[role].some((h) => h.step === s);
+      row.querySelector(".pip").classList.toggle("hit", hit);
+      row.classList.toggle("resting", !role);
     });
   };
   Player.onEnd = () => {
@@ -288,7 +325,8 @@ function saveCurrent() {
   if (list.some((s) => s.seed === currentSong.seed && s.mood === currentSong.mood)) {
     toast("Already saved"); return;
   }
-  list.unshift({ seed: currentSong.seed, mood: currentSong.mood, pack: curPack,
+  list.unshift({ seed: currentSong.seed, mood: currentSong.mood,
+                 pack: currentSong.pack || curPack,
                  name: currentSong.name, bpm: currentSong.bpm });
   setSaved(list.slice(0, 40));
   renderSaved();
@@ -307,11 +345,14 @@ function renderSaved() {
       <button class="btn sm load">Load</button>
       <button class="btn sm del">Remove</button>`;
     el.querySelector(".load").onclick = () => {
-      const pool = poolFor(s.pack || "all");
+      const pack = s.pack || "all";
+      const pool = poolFor(pack);
       if (pool.length < 2) { toast("That flock is unavailable"); return; }
-      currentSong = generateSong(s.seed, s.mood, pool);
+      currentSong = generateSong(s.seed, s.mood, pool, { bpm: s.bpm });
+      currentSong.pack = pack;
       curMood = s.mood;
       $$("#moodseg button").forEach((b) => b.classList.toggle("on", b.dataset.mood === s.mood));
+      setTempo(s.bpm, false);
       renderNow(); renderLanes(); startPlayback();
     };
     el.querySelector(".del").onclick = () => {
@@ -604,6 +645,8 @@ function boot() {
     if (e.key === " " || e.key === "Enter" || e.key === "ArrowRight") { e.preventDefault(); advance(); }
   });
   $("#enterbtn").onclick = enterApp;
+  const r0 = MOODS[curMood].bpm;
+  setTempo((r0[0] + r0[1]) / 2, false);
   showCard(0);
 
   $$("nav.tabs button").forEach((b) => (b.onclick = () => switchView(b.dataset.view)));
@@ -611,7 +654,12 @@ function boot() {
   $$("#moodseg button").forEach((b) => (b.onclick = () => {
     curMood = b.dataset.mood;
     $$("#moodseg button").forEach((x) => x.classList.toggle("on", x === b));
+    // Each mood has its own natural pace, so the slider follows it.
+    const r = MOODS[curMood].bpm;
+    setTempo((r[0] + r[1]) / 2, false);
   }));
+  $("#temposlider").oninput = (e) => setTempo(e.target.value, false);
+  $("#temposlider").onchange = (e) => setTempo(e.target.value, true);
   $$("#packseg button").forEach((b) => (b.onclick = () => {
     curPack = b.dataset.pack;
     $$("#packseg button").forEach((x) => x.classList.toggle("on", x === b));

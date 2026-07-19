@@ -82,7 +82,21 @@ for (const mood of ["chill", "upbeat", "chaos"]) {
     check(downbeat >= 0.8, `${mood}: only ${(downbeat * 100).toFixed(0)}% of main bars open on a bird`);
     check(birdGain > supportGain, `${mood}: backing (${supportGain.toFixed(0)}) louder than birds (${birdGain.toFixed(0)})`);
 
+    // Variety: the song must not be one bird's theme from start to finish.
+    const leads = new Set();
+    let everSounded = new Set();
+    for (const roles of song.schedule) {
+      for (const [id, r] of Object.entries(roles)) {
+        everSounded.add(id);
+        if (r === "lead") leads.add(id);
+      }
+    }
+    check(leads.size >= 3, `${mood}: only ${leads.size} bird(s) ever lead a section`);
+    check(everSounded.size >= Math.min(4, song.lanes.length),
+          `${mood}: only ${everSounded.size} of ${song.lanes.length} birds get a part`);
+
     stats.push({ secs: song.seconds, bpm: song.bpm, birds: counts.bird,
+                 leads: leads.size, parts: everSounded.size,
                  drums: counts.kick + counts.snare + counts.hat, lanes: usedLanes.size,
                  maxStep: maxPerStep, ratio: birdGain / Math.max(1, supportGain),
                  downbeat });
@@ -91,7 +105,8 @@ for (const mood of ["chill", "upbeat", "chaos"]) {
   console.log(`${mood.padEnd(7)} len ${avg("secs")}s  bpm ${avg("bpm")}  ` +
               `birdhits ${avg("birds")}  drumhits ${avg("drums")}  lanes ${avg("lanes")}  ` +
               `max/step ${avg("maxStep")}  bird:backing ${avg("ratio")}  ` +
-              `downbeat ${(stats.reduce((a, s) => a + s.downbeat, 0) / stats.length * 100).toFixed(0)}%`);
+              `downbeat ${(stats.reduce((a, s) => a + s.downbeat, 0) / stats.length * 100).toFixed(0)}%  ` +
+              `leads ${avg("leads")}  birds w/ a part ${avg("parts")}`);
 }
 
 // Determinism: the same seed must rebuild the same song.
@@ -99,6 +114,16 @@ const a = ctx.generateSong(12345, "upbeat", pool);
 const b = ctx.generateSong(12345, "upbeat", pool);
 check(JSON.stringify(a) === JSON.stringify(b), "same seed produced different songs");
 check(a.name === b.name, "same seed produced different names");
+
+// The tempo override changes speed without reshuffling the arrangement.
+const slow = ctx.generateSong(555, "upbeat", pool, { bpm: 90 });
+const fast = ctx.generateSong(555, "upbeat", pool, { bpm: 170 });
+check(slow.bpm === 90 && fast.bpm === 170, "tempo override not applied");
+check(JSON.stringify(slow.lanes) === JSON.stringify(fast.lanes),
+      "changing tempo changed which birds play");
+check(JSON.stringify(slow.schedule) === JSON.stringify(fast.schedule),
+      "changing tempo changed the arrangement");
+check(slow.seconds > fast.seconds, "slower tempo did not produce a longer track");
 
 // Pattern mode
 const pat = {

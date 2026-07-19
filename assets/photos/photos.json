@@ -350,5 +350,229 @@
   "license": "CC BY 2.0",
   "license_url": "https://creativecommons.org/licenses/by/2.0",
   "source": "https://commons.wikimedia.org/wiki/File:Superb_Lyrebird_(Menura_novaehollandiae)_(8079617147).jpg"
+ },
+ "toucan": {
+  "file": "toucan.webp",
+  "bytes": 14902,
+  "photographer": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg"
+ },
+ "keelbill": {
+  "file": "keelbill.webp",
+  "bytes": 41948,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Keel-billed_toucan_(Ramphastos_sulfuratus_sulfuratus)_on_foxtail_palm_(Wodyetia_bifurcata)_Cayo.jpg"
+ },
+ "macaw": {
+  "file": "macaw.webp",
+  "bytes": 35668,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg"
+ },
+ "blumacaw": {
+  "file": "blumacaw.webp",
+  "bytes": 12436,
+  "photographer": "Luc Viatour",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ara_ararauna_Luc_Viatour.jpg"
+ },
+ "oropendola": {
+  "file": "oropendola.webp",
+  "bytes": 17474,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Montezuma_oropendola_(Psarocolius_montezuma)_on_wild_papaya_Orange_Walk.jpg"
+ },
+ "kiskadee": {
+  "file": "kiskadee.webp",
+  "bytes": 9006,
+  "photographer": "Rhododendrites",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Great_kiskadee_(70240).jpg"
+ },
+ "koel": {
+  "file": "koel.webp",
+  "bytes": 11684,
+  "photographer": "Challiyan",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Asian_koel.jpg"
+ },
+ "myna": {
+  "file": "myna.webp",
+  "bytes": 13968,
+  "photographer": "Nafis Ameen",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Common_Hill_Myna,_Satchari_NP,_Bangladesh_1.jpg"
+ },
+ "drongo": {
+  "file": "drongo.webp",
+  "bytes": 7794,
+  "photographer": "Swardeepak",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:GRTDrongo_Sandeep.jpg"
+ },
+ "cockofrock": {
+  "file": "cockofrock.webp",
+  "bytes": 11846,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Andean_cock-of-the-rock_(Rupicola_peruvianus_sanguinolentus)_male_Antioquia.jpg"
+ },
+ "limpkin": {
+  "file": "limpkin.webp",
+  "bytes": 15224,
+  "photographer": "VJAnderson",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Limpkin,_Florida_05.jpg"
+ },
+ "tinamou": {
+  "file": "tinamou.webp",
+  "bytes": 16242,
+  "photographer": "Patrick Coin (Patrick Coin)",
+  "license": "CC BY-SA 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+  "source": "https://commons.wikimedia.org/wiki/File:Tinamus_majorPCSL00504B.jpg"
+ },
+ "motmot": {
+  "file": "motmot.webp",
+  "bytes": 13956,
+  "photographer": "Paulo Antonio Santos",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:500px_photo_(94339109),_crop.jpg"
+ },
+ "quetzal": {
+  "file": "quetzal.webp",
+  "bytes": 36484,
+  "photographer": "lwolfartist",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Resplendent_quetzal_san_gerardo_de_dota_3.31.24_DSC_3989-topaz-denoiseraw.jpg"
+ },
+ "barebellbird": {
+  "file": "barebellbird.webp",
+  "bytes": 6336,
+  "photographer": "Ben Tavener",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Procnias_nudicollis.jpg"
+ },
+ "sunbittern": {
+  "file": "sunbittern.webp",
+  "bytes": 32998,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sunbittern_(Eurypyga_helias).JPG"
+ },
+ "robin": {
+  "file": "robin.webp",
+  "bytes": 9324,
+  "photographer": "Francis C. Franklin",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Erithacus_rubecula_with_cocked_head.jpg"
+ },
+ "songthrush": {
+  "file": "songthrush.webp",
+  "bytes": 8278,
+  "photographer": "Dion Art",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D0%B2%D1%87%D0%B8%D0%B9_%D0%B4%D1%80%D0%BE%D0%B7%D0%B4_%D0%BD%D0%B0_%D0%BF%D0%B5%D0%BD%D1%8C%D0%BA%D0%B5_(Turdus_philomelos),_%D0%91%D0%B8%D1%82%D1%86%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B5%D1%81.jpg"
+ },
+ "wren": {
+  "file": "wren.webp",
+  "bytes": 11260,
+  "photographer": "Alexis Lours",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Eurasian_wren_Franconville_02.jpg"
+ },
+ "curlew": {
+  "file": "curlew.webp",
+  "bytes": 28060,
+  "photographer": "Andreas Trepte",
+  "license": "CC BY-SA 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+  "source": "https://commons.wikimedia.org/wiki/File:Eurasian_Curlew.jpg"
+ },
+ "tawnyowl": {
+  "file": "tawnyowl.webp",
+  "bytes": 19316,
+  "photographer": "Martin Mecnarowski (http://www.photomecan.eu/)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:Strix_aluco_3_(Martin_Mecnarowski).jpg"
+ },
+ "greenwood": {
+  "file": "greenwood.webp",
+  "bytes": 25786,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:European_green_woodpecker_(Picus_viridis)_female_Barnes.jpg"
+ },
+ "woodthrush": {
+  "file": "woodthrush.webp",
+  "bytes": 24300,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Wood_thrush_(Hylocichla_mustelina)_Peten.jpg"
+ },
+ "cardinal": {
+  "file": "cardinal.webp",
+  "bytes": 11852,
+  "photographer": "Rhododendrites",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Male_northern_cardinal_in_Central_Park_(52612).jpg"
+ },
+ "bluejay": {
+  "file": "bluejay.webp",
+  "bytes": 10274,
+  "photographer": "Rhododendrites",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Blue_jay_in_PP_(30960).jpg"
+ },
+ "whippoorwill": {
+  "file": "whippoorwill.webp",
+  "bytes": 32866,
+  "photographer": "Louis Agassiz Fuertes",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Caprimulgus_vociferusAAP065B.jpg"
+ },
+ "snipe": {
+  "file": "snipe.webp",
+  "bytes": 11652,
+  "photographer": "TRinaud",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Common_snipe_(Gallinago_gallinago)_2022.jpg"
+ },
+ "hoopoe": {
+  "file": "hoopoe.webp",
+  "bytes": 33872,
+  "photographer": "Greg Schechter from San Francisco, USA",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Israel._Eurasian_Hoopoe_(6497645007).jpg"
  }
 }

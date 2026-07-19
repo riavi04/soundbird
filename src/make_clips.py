@@ -220,7 +220,7 @@ def main():
             cands.append(c)
         # Enough variety to pick a good phrase without pulling a lot of data
         # from a volunteer-run archive.
-        cands = cands[:6]
+        cands = cands[:5]
         if not cands:
             print(f"!! {key}: no candidates", file=sys.stderr)
             continue

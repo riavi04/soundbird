@@ -10,6 +10,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "src")
 CLIPS = os.path.join(ROOT, "assets", "clips")
 PHOTOS = os.path.join(ROOT, "assets", "photos")
+FONTS = os.path.join(ROOT, "assets", "fonts")
+
+# EB Garamond, inlined as data URIs. The page's CSP blocks font CDNs, and a
+# linked webfont would fail silently and fall back to something else.
+FONT_FACES = [
+    ("ebgaramond-regular.woff2", "normal", "400"),
+    ("ebgaramond-italic.woff2", "italic", "400"),
+]
 
 
 def read(p):
@@ -58,8 +66,23 @@ def main():
                 "source": p.get("source", ""),
             }
 
+    faces, font_bytes = [], 0
+    for fname, style, weight in FONT_FACES:
+        fp = os.path.join(FONTS, fname)
+        if not os.path.exists(fp):
+            print(f"  missing font {fname}", file=sys.stderr)
+            continue
+        raw = open(fp, "rb").read()
+        font_bytes += len(raw)
+        b64 = base64.b64encode(raw).decode("ascii")
+        faces.append(
+            "@font-face{font-family:'EB Garamond';font-style:%s;font-weight:%s;"
+            "font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
+            % (style, weight, b64))
+
     parts = [
-        "<title>sound_bird_</title>",
+        "<title>soundbird</title>",
+        "<style>\n" + "\n".join(faces) + "\n</style>",
         "<style>\n" + read(os.path.join(SRC, "style.css")) + "\n</style>",
         read(os.path.join(SRC, "index.html")),
         "<script>window.BIRD_DATA=" + json.dumps(manifest, separators=(",", ":")) + ";</script>",
@@ -86,6 +109,7 @@ def main():
     print(f"birds:  {len(manifest)}")
     print(f"clips:  {len(audio)}  ({total/1024:.0f} KB raw)")
     print(f"photos: {len(photos)}  ({photo_bytes/1024:.0f} KB raw)")
+    print(f"fonts:  {len(faces)}  ({font_bytes/1024:.0f} KB raw)")
     print(f"artifact:   {out_path}  ({os.path.getsize(out_path)/1024/1024:.2f} MB)")
     print(f"standalone: {standalone}  ({os.path.getsize(standalone)/1024/1024:.2f} MB)")
 
