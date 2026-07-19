@@ -373,6 +373,82 @@ async function startPlayback() {
   clearSeqStep();
 }
 
+/* ---------------- favorites ---------------- */
+/* A favorite is one specific clip of one bird, kept as "birdKey:clipIndex" in
+   this browser. Favorited clips surface in the composer as their own dropdown,
+   so a sound he liked in the aviary is one click away when building a track. */
+const FAV_KEY = "soundbird.favs.v1";
+
+function favId(key, i) { return key + ":" + i; }
+
+function getFavs() {
+  try { return JSON.parse(localStorage.getItem(FAV_KEY)) || []; } catch (e) { return []; }
+}
+function setFavs(list) {
+  try { localStorage.setItem(FAV_KEY, JSON.stringify(list)); } catch (e) {}
+}
+function isFav(key, i) { return getFavs().includes(favId(key, i)); }
+
+function toggleFav(key, i) {
+  const id = favId(key, i);
+  const list = getFavs();
+  const at = list.indexOf(id);
+  let nowOn;
+  if (at >= 0) { list.splice(at, 1); nowOn = false; }
+  else { list.push(id); nowOn = true; }
+  setFavs(list);
+  renderFavPicker();
+  return nowOn;
+}
+
+/* Only favorites whose bird actually loaded, newest first, so a stored id for a
+   bird that later dropped out never breaks the picker. */
+function liveFavs() {
+  return getFavs().slice().reverse().filter((id) => {
+    const [key, i] = id.split(":");
+    return Player.buffers[key] && Player.buffers[key][+i];
+  });
+}
+
+/* One star button, wired to toggle and reflect its own state. */
+function makeFavStar(key, i) {
+  const s = document.createElement("button");
+  s.className = "favstar" + (isFav(key, i) ? " on" : "");
+  s.type = "button";
+  s.title = "Save this sound to favorites";
+  s.setAttribute("aria-pressed", isFav(key, i) ? "true" : "false");
+  s.setAttribute("aria-label", `Favorite ${(BIRDS[key] || {}).common || "bird"} clip ${i + 1}`);
+  s.textContent = "★";
+  s.onclick = (e) => {
+    e.stopPropagation();
+    const on = toggleFav(key, i);
+    s.classList.toggle("on", on);
+    s.setAttribute("aria-pressed", on ? "true" : "false");
+    // Keep every copy of this star (card and open sheet) in agreement.
+    $$(`.favstar[data-fav="${favId(key, i)}"]`).forEach((el) => {
+      el.classList.toggle("on", on);
+      el.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    toast(on ? "Saved to favorites" : "Removed from favorites");
+  };
+  s.dataset.fav = favId(key, i);
+  return s;
+}
+
+/* A play button and a star for one clip, used by both the card and the sheet. */
+function clipChip(key, i) {
+  const chip = document.createElement("span");
+  chip.className = "clipchip";
+  const play = document.createElement("button");
+  play.className = "btn sm clipplay";
+  play.type = "button";
+  play.textContent = "clip " + (i + 1);
+  play.onclick = () => { Player.preview(key, i, 0); popBird(key); };
+  chip.appendChild(play);
+  chip.appendChild(makeFavStar(key, i));
+  return chip;
+}
+
 /* ---------------- saving ---------------- */
 const SAVE_KEY = "soundbird.saved.v1";
 function getSaved() {
@@ -519,17 +595,39 @@ function buildSequencer() {
     o.value = k; o.textContent = v.common;
     sel.appendChild(o);
   });
+  renderFavPicker();
   renderSeq();
   updateSeqInfo();
 }
 
-function addLane(birdKey, redraw = true) {
+/* The favorites dropdown in the composer. Each option carries the bird and the
+   exact clip, so choosing one drops in a lane already set to that sound. */
+function renderFavPicker() {
+  const sel = $("#addfav");
+  if (!sel) return;
+  const favs = liveFavs();
+  // The whole control hides until there is at least one favorite, so it does
+  // not sit there empty next to "Add a bird".
+  const label = sel.closest("label");
+  if (label) label.classList.toggle("hide", favs.length === 0);
+  if (!favs.length) { sel.innerHTML = '<option value="">no favorites yet</option>'; return; }
+  sel.innerHTML = `<option value="">${favs.length} saved</option>` +
+    favs.map((id) => {
+      const [key, i] = id.split(":");
+      const name = (BIRDS[key] || {}).common || key;
+      return `<option value="${id}">${name} · clip ${(+i) + 1}</option>`;
+    }).join("");
+}
+
+function addLane(birdKey, redraw = true, clipIdx = 0) {
   const sp = BIRDS[birdKey];
   if (!sp) return;
   const n = pattern.lanes.length;
+  const clips = Player.buffers[birdKey] || [];
   pattern.lanes.push({
     id: "p" + Date.now() + "_" + n,
-    bird: birdKey, common: sp.common, clip: 0, semi: 0,
+    bird: birdKey, common: sp.common,
+    clip: Math.min(clipIdx, Math.max(0, clips.length - 1)), semi: 0,
     cells: new Array(patternSteps()).fill(0),
     pan: n % 2 === 0 ? -0.25 : 0.25,
     muted: false, solo: false, gain: 1,
@@ -749,13 +847,7 @@ function buildAviary(filter = "all") {
         <div class="credit">Recorded by ${credits}${photoCredit}</div>
       </div>`;
     const cbox = card.querySelector(".clips");
-    clips.forEach((_, i) => {
-      const b = document.createElement("button");
-      b.className = "btn sm";
-      b.textContent = "clip " + (i + 1);
-      b.onclick = () => Player.preview(key, i, 0);
-      cbox.appendChild(b);
-    });
+    clips.forEach((_, i) => cbox.appendChild(clipChip(key, i)));
     const add = document.createElement("button");
     add.className = "btn sm gold";
     add.textContent = "to sequencer";
@@ -810,13 +902,7 @@ function openBird(key) {
     </div>`;
 
   const cbox = card.querySelector(".clips");
-  clips.forEach((_, i) => {
-    const b = document.createElement("button");
-    b.className = "btn sm";
-    b.textContent = "clip " + (i + 1);
-    b.onclick = () => { Player.preview(key, i, 0); popBird(key); };
-    cbox.appendChild(b);
-  });
+  clips.forEach((_, i) => cbox.appendChild(clipChip(key, i)));
   const add = document.createElement("button");
   add.className = "btn sm gold";
   add.textContent = "to sequencer";
@@ -934,6 +1020,16 @@ function boot() {
   };
   $("#addbird").onchange = (e) => {
     if (e.target.value) { addLane(e.target.value); e.target.value = ""; }
+  };
+  $("#addfav").onchange = (e) => {
+    const val = e.target.value;
+    e.target.value = "";
+    if (!val) return;
+    const [key, i] = val.split(":");
+    addLane(key, true, +i);
+    Player.preview(key, +i, 0);
+    popBird(key);
+    toast(`${(BIRDS[key] || {}).common || key} clip ${(+i) + 1} added`);
   };
 }
 

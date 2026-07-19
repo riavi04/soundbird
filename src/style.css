@@ -346,6 +346,24 @@ select{
 .bcard .sci{font-style:italic;color:var(--muted);font-size:.79rem;margin-bottom:9px}
 .bcard .blurb{font-size:.85rem;color:#c3d3e8;margin:0 0 13px}
 .bcard .clips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+
+/* ---------------- clip chips + favorite star ---------------- */
+/* A clip is a play button and a star, joined into one pill so the two read as
+   a pair. */
+.clipchip{display:inline-flex;align-items:stretch;border-radius:8px;overflow:hidden}
+.clipchip .clipplay{border-radius:8px 0 0 8px;border-right:none}
+.favstar{
+  border:1px solid var(--line2);border-left:none;border-radius:0 8px 8px 0;
+  background:rgba(255,255,255,.035);color:var(--muted);
+  padding:0 9px;font-size:.86rem;line-height:1;cursor:pointer;transition:.18s;
+  display:grid;place-items:center;
+}
+.favstar:hover{color:var(--accent2);background:rgba(227,184,119,.1)}
+.favstar.on{
+  color:var(--accent2);background:rgba(227,184,119,.16);
+  border-color:rgba(227,184,119,.5);
+}
+.favstar.on:hover{background:rgba(227,184,119,.24)}
 .bcard .credit{
   font-size:.7rem;color:var(--muted);border-top:1px solid var(--line);
   padding-top:10px;line-height:1.6;
