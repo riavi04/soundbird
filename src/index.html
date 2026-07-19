@@ -1,0 +1,159 @@
+<div id="intro">
+  <div class="loadbar" id="loadbar"></div>
+  <div class="deco">
+    <svg class="br1" viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+      <path d="M298 14C232 52 178 104 136 172c-20 33-34 70-42 112"/>
+      <path d="M252 46c-16-15-38-17-54-4 12 17 36 19 54 4z"/>
+      <path d="M225 74c-18-13-40-12-54 3 14 15 38 14 54-3z"/>
+      <path d="M198 106c-19-11-41-7-53 9 16 13 39 9 53-9z"/>
+      <path d="M172 143c-20-8-41-1-51 16 17 11 39 4 51-16z"/>
+      <path d="M150 185c-20-5-40 4-48 22 18 9 39-1 48-22z"/>
+      <path d="M266 30c14 8 22 22 22 38M232 62c15 6 25 19 27 35M204 96c15 4 26 16 30 32"/>
+    </svg>
+    <svg class="br2" viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+      <path d="M2 16C68 54 122 106 164 174c20 33 34 70 42 112"/>
+      <path d="M48 48c16-15 38-17 54-4-12 17-36 19-54 4z"/>
+      <path d="M75 76c18-13 40-12 54 3-14 15-38 14-54-3z"/>
+      <path d="M102 108c19-11 41-7 53 9-16 13-39 9-53-9z"/>
+      <path d="M128 145c20-8 41-1 51 16-17 11-39 4-51-16z"/>
+    </svg>
+  </div>
+  <div class="card" id="card">
+    <div class="tune-vis hide" id="tunevis"></div>
+    <p id="cardtext"></p>
+    <button class="enter-btn hide" id="enterbtn">open sound_bird_</button>
+  </div>
+  <div class="hint" id="hint">tap anywhere to continue</div>
+</div>
+
+<div id="app" class="hide">
+  <svg class="appdeco" viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" aria-hidden="true">
+    <path d="M398 8C320 60 250 130 200 220c-24 44-40 92-48 144"/>
+    <path d="M344 62c-20-18-48-20-68-4 16 20 46 22 68 4z"/>
+    <path d="M310 100c-22-16-50-14-68 4 18 18 48 16 68-4z"/>
+    <path d="M276 142c-24-14-52-10-66 12 20 16 48 12 66-12z"/>
+    <path d="M246 190c-25-10-52-2-64 20 21 14 48 6 64-20z"/>
+    <path d="M220 244c-25-6-50 5-60 27 22 11 49-1 60-27z"/>
+    <path d="M360 30c18 10 28 28 28 48M320 76c19 8 31 24 34 44M286 122c19 5 33 20 38 40"/>
+  </svg>
+  <header class="top">
+    <div class="brand">
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M44 20c0-6-5-11-11-11S22 14 22 20c0 3-8 5-13 12 6 1 9 4 9 4-4 8 1 19 14 19 14 0 22-10 22-22 0-5-2-9-5-12"/>
+        <circle cx="38" cy="19" r="1.6" fill="currentColor" stroke="none"/>
+        <path d="M44 20l10-3-8 8"/>
+      </svg>
+      <div>
+        <h1>sound<span>_</span>bird<span>_</span></h1>
+        <div class="sub">a remix machine for Ben</div>
+      </div>
+    </div>
+    <nav class="tabs">
+      <button data-view="generate" class="on">Generate</button>
+      <button data-view="compose">Compose</button>
+      <button data-view="aviary">Aviary</button>
+    </nav>
+  </header>
+
+  <!-- ============ GENERATE ============ -->
+  <section id="view-generate">
+    <div class="panel">
+      <h2>Random remix</h2>
+      <p class="lede">Pick a mood and a flock, then let it build you a track. Every track has a seed, so anything you save comes back exactly as it was.</p>
+      <div class="row" style="gap:22px">
+        <label class="fld">Mood
+          <div class="seg" id="moodseg">
+            <button data-mood="chill">chill</button>
+            <button data-mood="upbeat" class="on">upbeat</button>
+            <button data-mood="chaos">chaos</button>
+          </div>
+        </label>
+        <label class="fld">Flock
+          <div class="seg" id="packseg">
+            <button data-pack="all" class="on">everything</button>
+            <button data-pack="classic">classic</button>
+            <button data-pack="tropical">tropical</button>
+            <button data-pack="weird">weird</button>
+          </div>
+        </label>
+        <div class="grow"></div>
+        <button class="btn primary" id="genbtn" style="align-self:flex-end">Generate a track</button>
+      </div>
+    </div>
+
+    <div class="now" id="nowpanel">
+      <button class="playbtn" id="playbtn" title="play or stop">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="grow" style="min-width:200px">
+        <h3 class="title" id="trackname">Nothing yet</h3>
+        <div class="meta" id="trackmeta">press generate to make something</div>
+        <div class="bar"><i id="progress"></i></div>
+      </div>
+      <div class="transport">
+        <button class="btn sm" id="savebtn" disabled>Save</button>
+        <button class="btn sm gold" id="dlbtn" disabled>Download</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Flock mode</h2>
+      <p class="lede">Mute a bird to strip the track back, or solo one to hear it alone. Changes apply while it plays.</p>
+      <div class="lanes" id="lanes"><div class="empty">No track loaded yet.</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>Saved tracks</h2>
+      <p class="lede">Stored in this browser on this device.</p>
+      <div class="saved" id="savedlist"><div class="empty">Nothing saved yet.</div></div>
+    </div>
+  </section>
+
+  <!-- ============ COMPOSE ============ -->
+  <section id="view-compose" class="hide">
+    <div class="panel">
+      <h2>Build your own</h2>
+      <p class="lede">Each row is a bird or a drum. Click the squares to place hits. The number next to each bird shifts its pitch in semitones, which also makes it shorter and brighter as it goes up.</p>
+      <div class="row" style="gap:18px">
+        <button class="btn primary" id="seqplay">Play loop</button>
+        <label class="fld">Tempo <span id="bpmlabel" style="color:var(--txt);font-family:var(--mono)">128 bpm</span>
+          <input type="range" id="bpmslider" min="70" max="180" value="128">
+        </label>
+        <label class="fld">Add a bird
+          <select id="addbird"></select>
+        </label>
+        <div class="grow"></div>
+        <button class="btn sm" id="seqrandom">Surprise me</button>
+        <button class="btn sm" id="seqclear">Clear</button>
+        <button class="btn sm gold" id="seqdl">Download</button>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="seqwrap"><table class="seq" id="seqtable"></table></div>
+    </div>
+  </section>
+
+  <!-- ============ AVIARY ============ -->
+  <section id="view-aviary" class="hide">
+    <div class="panel">
+      <h2>The aviary</h2>
+      <p class="lede">Every sound in here is a real wild recording of a real bird, made by a person who went outside with a microphone. Their names are on the cards. Click a clip to hear it.</p>
+      <div class="row">
+        <div class="seg" id="aviaryfilter">
+          <button data-pack="all" class="on">everything</button>
+          <button data-pack="classic">classic</button>
+          <button data-pack="tropical">tropical</button>
+          <button data-pack="weird">weird</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid" id="aviarygrid"></div>
+  </section>
+
+  <footer class="foot">
+    <div>All recordings come from <a href="https://xeno-canto.org" target="_blank" rel="noopener">xeno-canto</a>, a library of wild bird sound shared by recordists around the world, under Creative Commons licences. Each clip credits its recordist and links back to the original. Clips have been trimmed, filtered and level matched for use here.</div>
+    <div style="margin-top:8px">Made for Ben. Go wild.</div>
+  </footer>
+</div>
+
+<div class="toast" id="toast"></div>

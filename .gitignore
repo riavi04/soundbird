@@ -1,0 +1,6 @@
+# Cached source recordings: large, and re-downloadable from GBIF at any time.
+assets/raw/
+
+.DS_Store
+__pycache__/
+*.pyc

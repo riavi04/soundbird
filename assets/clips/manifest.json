@@ -1,0 +1,677 @@
+{
+ "thicknee": {
+  "common": "Peruvian Thick-knee",
+  "scientific": "Burhinus superciliaris",
+  "pack": "weird",
+  "blurb": "A wide-eyed desert wader that runs rather than flies and shrieks in rattling bursts at dusk.",
+  "clips": [
+   {
+    "file": "thicknee_0.mp3",
+    "duration": 0.882,
+    "score": 15.92,
+    "xc_id": "1009067",
+    "source": "https://xeno-canto.org/1009067",
+    "recordist": "Jerome Fischer",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Peru"
+   },
+   {
+    "file": "thicknee_1.mp3",
+    "duration": 0.557,
+    "score": 13.75,
+    "xc_id": "47177",
+    "source": "https://xeno-canto.org/47177",
+    "recordist": "Andrew Spencer",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Peru"
+   },
+   {
+    "file": "thicknee_2.mp3",
+    "duration": 0.464,
+    "score": 8.36,
+    "xc_id": "47178",
+    "source": "https://xeno-canto.org/47178",
+    "recordist": "Andrew Spencer",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Peru"
+   }
+  ]
+ },
+ "potoo": {
+  "common": "Great Potoo",
+  "scientific": "Nyctibius grandis",
+  "pack": "weird",
+  "blurb": "Sits frozen on a branch pretending to be a stump all day, then screams into the dark all night.",
+  "clips": [
+   {
+    "file": "potoo_0.mp3",
+    "duration": 1.126,
+    "score": 6.51,
+    "xc_id": "986568",
+    "source": "https://xeno-canto.org/986568",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   },
+   {
+    "file": "potoo_1.mp3",
+    "duration": 0.94,
+    "score": 5.15,
+    "xc_id": "986569",
+    "source": "https://xeno-canto.org/986569",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   },
+   {
+    "file": "potoo_2.mp3",
+    "duration": 1.602,
+    "score": 4.43,
+    "xc_id": "981427",
+    "source": "https://xeno-canto.org/981427",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   }
+  ]
+ },
+ "loon": {
+  "common": "Common Loon",
+  "scientific": "Gavia immer",
+  "pack": "classic",
+  "blurb": "The wavering yodel of a northern lake. Each male's yodel is unique to him, like a signature.",
+  "clips": [
+   {
+    "file": "loon_0.mp3",
+    "duration": 0.755,
+    "score": 6.35,
+    "xc_id": "1020843",
+    "source": "https://xeno-canto.org/1020843",
+    "recordist": "Stanislas Wroza",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Canada"
+   },
+   {
+    "file": "loon_1.mp3",
+    "duration": 1.091,
+    "score": 3.18,
+    "xc_id": "1020847",
+    "source": "https://xeno-canto.org/1020847",
+    "recordist": "Stanislas Wroza",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Canada"
+   },
+   {
+    "file": "loon_2.mp3",
+    "duration": 0.464,
+    "score": 1.5,
+    "xc_id": "1022515",
+    "source": "https://xeno-canto.org/1022515",
+    "recordist": "Stanislas Wroza",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Canada"
+   }
+  ]
+ },
+ "piha": {
+  "common": "Screaming Piha",
+  "scientific": "Lipaugus vociferans",
+  "pack": "tropical",
+  "blurb": "A drab grey bird with one of the loudest calls in the Amazon: a rising whistle then a whip-crack.",
+  "clips": [
+   {
+    "file": "piha_0.mp3",
+    "duration": 0.604,
+    "score": 15.74,
+    "xc_id": "984289",
+    "source": "https://xeno-canto.org/984289",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   },
+   {
+    "file": "piha_1.mp3",
+    "duration": 1.44,
+    "score": 15.04,
+    "xc_id": "984291",
+    "source": "https://xeno-canto.org/984291",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   },
+   {
+    "file": "piha_2.mp3",
+    "duration": 1.44,
+    "score": 11.31,
+    "xc_id": "984290",
+    "source": "https://xeno-canto.org/984290",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   }
+  ]
+ },
+ "ptarmigan": {
+  "common": "Willow Ptarmigan",
+  "scientific": "Lagopus lagopus",
+  "pack": "weird",
+  "blurb": "The 'awebo' bird. Males defend territory by yelling what sounds uncannily like Mexican slang.",
+  "clips": [
+   {
+    "file": "ptarmigan_0.mp3",
+    "duration": 1.974,
+    "score": 18.65,
+    "xc_id": "971598",
+    "source": "https://xeno-canto.org/971598",
+    "recordist": "Stein \u00d8. Nilsen",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Norway"
+   },
+   {
+    "file": "ptarmigan_1.mp3",
+    "duration": 2.543,
+    "score": 18.56,
+    "xc_id": "1087446",
+    "source": "https://xeno-canto.org/1087446",
+    "recordist": "Gustav Haapalahti",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Sweden"
+   },
+   {
+    "file": "ptarmigan_2.mp3",
+    "duration": 1.637,
+    "score": 9.91,
+    "xc_id": "1019532",
+    "source": "https://xeno-canto.org/1019532",
+    "recordist": "Torborg Berge",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Norway"
+   }
+  ]
+ },
+ "quail": {
+  "common": "Common Quail",
+  "scientific": "Coturnix coturnix",
+  "pack": "classic",
+  "blurb": "Rarely seen, constantly heard. A liquid three-note 'wet-my-lips' from deep in the grass.",
+  "clips": [
+   {
+    "file": "quail_0.mp3",
+    "duration": 0.464,
+    "score": 9.14,
+    "xc_id": "1082961",
+    "source": "https://xeno-canto.org/1082961",
+    "recordist": "Jo\u00e3o Ferreira Tom\u00e1s",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Spain"
+   },
+   {
+    "file": "quail_1.mp3",
+    "duration": 0.464,
+    "score": 4.27,
+    "xc_id": "1082011",
+    "source": "https://xeno-canto.org/1082011",
+    "recordist": "Jo\u00e3o Ferreira Tom\u00e1s",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Spain"
+   },
+   {
+    "file": "quail_2.mp3",
+    "duration": 1.358,
+    "score": 3.74,
+    "xc_id": "1105001",
+    "source": "https://xeno-canto.org/1105001",
+    "recordist": "Guido O. Keijl",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Morocco"
+   }
+  ]
+ },
+ "woodcock": {
+  "common": "American Woodcock",
+  "scientific": "Scolopax minor",
+  "pack": "weird",
+  "blurb": "Delivers a nasal 'peent' from the ground, then spirals into the sky on twittering wings.",
+  "clips": [
+   {
+    "file": "woodcock_0.mp3",
+    "duration": 0.94,
+    "score": 10.55,
+    "xc_id": "1086270",
+    "source": "https://xeno-canto.org/1086270",
+    "recordist": "Don Henise",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   },
+   {
+    "file": "woodcock_1.mp3",
+    "duration": 1.707,
+    "score": 9.15,
+    "xc_id": "1099271",
+    "source": "https://xeno-canto.org/1099271",
+    "recordist": "kl",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   },
+   {
+    "file": "woodcock_2.mp3",
+    "duration": 0.464,
+    "score": 6.96,
+    "xc_id": "1102344",
+    "source": "https://xeno-canto.org/1102344",
+    "recordist": "Ray Cooke",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Canada"
+   }
+  ]
+ },
+ "kiwi": {
+  "common": "North Island Brown Kiwi",
+  "scientific": "Apteryx mantelli",
+  "pack": "weird",
+  "blurb": "Flightless, nocturnal, nostrils on the bill tip. The male's call is a hoarse ascending whistle.",
+  "clips": [
+   {
+    "file": "kiwi_0.mp3",
+    "duration": 1.277,
+    "score": 29.11,
+    "xc_id": "794786",
+    "source": "https://xeno-canto.org/794786",
+    "recordist": "Barry Edmonston",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "New Zealand"
+   },
+   {
+    "file": "kiwi_1.mp3",
+    "duration": 0.778,
+    "score": 22.86,
+    "xc_id": "794785",
+    "source": "https://xeno-canto.org/794785",
+    "recordist": "Barry Edmonston",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "New Zealand"
+   },
+   {
+    "file": "kiwi_2.mp3",
+    "duration": 1.3,
+    "score": 21.78,
+    "xc_id": "955810",
+    "source": "https://xeno-canto.org/955810",
+    "recordist": "Meena Haribal",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "New Zealand"
+   }
+  ]
+ },
+ "sagegrouse": {
+  "common": "Greater Sage-Grouse",
+  "scientific": "Centrocercus urophasianus",
+  "pack": "weird",
+  "blurb": "Inflates two yellow air sacs and pops them. Sounds less like a bird than a dripping tap in a cave.",
+  "clips": [
+   {
+    "file": "sagegrouse_0.mp3",
+    "duration": 0.94,
+    "score": 26.24,
+    "xc_id": "845383",
+    "source": "https://xeno-canto.org/845383",
+    "recordist": "Michael Hurben",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   },
+   {
+    "file": "sagegrouse_1.mp3",
+    "duration": 0.476,
+    "score": 6.16,
+    "xc_id": "368674",
+    "source": "https://xeno-canto.org/368674",
+    "recordist": "Sue Riffe",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   },
+   {
+    "file": "sagegrouse_2.mp3",
+    "duration": 0.975,
+    "score": 4.57,
+    "xc_id": "368669",
+    "source": "https://xeno-canto.org/368669",
+    "recordist": "Sue Riffe",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   }
+  ]
+ },
+ "bellbird": {
+  "common": "White Bellbird",
+  "scientific": "Procnias albus",
+  "pack": "tropical",
+  "blurb": "The loudest bird ever measured, at 125 decibels. Sings directly at females from inches away.",
+  "clips": [
+   {
+    "file": "bellbird_0.mp3",
+    "duration": 0.882,
+    "score": 24.99,
+    "xc_id": "830670",
+    "source": "https://xeno-canto.org/830670",
+    "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil"
+   },
+   {
+    "file": "bellbird_1.mp3",
+    "duration": 1.091,
+    "score": 21.0,
+    "xc_id": "830669",
+    "source": "https://xeno-canto.org/830669",
+    "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil"
+   },
+   {
+    "file": "bellbird_2.mp3",
+    "duration": 1.08,
+    "score": 21.0,
+    "xc_id": "837010",
+    "source": "https://xeno-canto.org/837010",
+    "recordist": "Ricardo Gagliardi",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil"
+   }
+  ]
+ },
+ "penguin": {
+  "common": "King Penguin",
+  "scientific": "Aptenodytes patagonicus",
+  "pack": "weird",
+  "blurb": "Two-voiced trumpeting braying. Chicks find parents in a colony of thousands by voice alone.",
+  "clips": [
+   {
+    "file": "penguin_0.mp3",
+    "duration": 3.239,
+    "score": 19.8,
+    "xc_id": "1078324",
+    "source": "https://xeno-canto.org/1078324",
+    "recordist": "Meena Haribal",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United Kingdom of Great Britain and Northern Ireland"
+   },
+   {
+    "file": "penguin_1.mp3",
+    "duration": 2.554,
+    "score": 19.62,
+    "xc_id": "1079159",
+    "source": "https://xeno-canto.org/1079159",
+    "recordist": "Aladdin",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United Kingdom of Great Britain and Northern Ireland"
+   },
+   {
+    "file": "penguin_2.mp3",
+    "duration": 0.871,
+    "score": 14.41,
+    "xc_id": "1078323",
+    "source": "https://xeno-canto.org/1078323",
+    "recordist": "Meena Haribal",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United Kingdom of Great Britain and Northern Ireland"
+   }
+  ]
+ },
+ "starling": {
+  "common": "European Starling",
+  "scientific": "Sturnus vulgaris",
+  "pack": "classic",
+  "blurb": "A relentless mimic. Wild ones copy car alarms, phones and other birds into rambling medleys.",
+  "clips": [
+   {
+    "file": "starling_0.mp3",
+    "duration": 0.987,
+    "score": 10.44,
+    "xc_id": "1079417",
+    "source": "https://xeno-canto.org/1079417",
+    "recordist": "Jordi Calvet",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Spain"
+   },
+   {
+    "file": "starling_1.mp3",
+    "duration": 0.789,
+    "score": 8.99,
+    "xc_id": "1069992",
+    "source": "https://xeno-canto.org/1069992",
+    "recordist": "Lionel FREDERIC",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France"
+   },
+   {
+    "file": "starling_2.mp3",
+    "duration": 0.72,
+    "score": 2.25,
+    "xc_id": "1072682",
+    "source": "https://xeno-canto.org/1072682",
+    "recordist": "Colm Philpott",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ireland"
+   }
+  ]
+ },
+ "lyrebird": {
+  "common": "Superb Lyrebird",
+  "scientific": "Menura novaehollandiae",
+  "pack": "weird",
+  "blurb": "The greatest mimic alive. Copies other birds, and in some cases chainsaws and camera shutters.",
+  "clips": [
+   {
+    "file": "lyrebird_0.mp3",
+    "duration": 0.557,
+    "score": 15.24,
+    "xc_id": "1086971",
+    "source": "https://xeno-canto.org/1086971",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "lyrebird_1.mp3",
+    "duration": 0.522,
+    "score": 14.88,
+    "xc_id": "1031594",
+    "source": "https://xeno-canto.org/1031594",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "lyrebird_2.mp3",
+    "duration": 0.488,
+    "score": 9.65,
+    "xc_id": "1019696",
+    "source": "https://xeno-canto.org/1019696",
+    "recordist": "Vanessa Ferdinand",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   }
+  ]
+ },
+ "kookaburra": {
+  "common": "Laughing Kookaburra",
+  "scientific": "Dacelo novaeguineae",
+  "pack": "classic",
+  "blurb": "A giant kingfisher whose family chorus of maniacal laughter stakes out the territory at dawn.",
+  "clips": [
+   {
+    "file": "kookaburra_0.mp3",
+    "duration": 4.54,
+    "score": 30.0,
+    "xc_id": "1085056",
+    "source": "https://xeno-canto.org/1085056",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "kookaburra_1.mp3",
+    "duration": 4.54,
+    "score": 30.0,
+    "xc_id": "1085085",
+    "source": "https://xeno-canto.org/1085085",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "kookaburra_2.mp3",
+    "duration": 4.54,
+    "score": 30.0,
+    "xc_id": "1085083",
+    "source": "https://xeno-canto.org/1085083",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   }
+  ]
+ },
+ "crane": {
+  "common": "Siberian Crane",
+  "scientific": "Leucogeranus leucogeranus",
+  "pack": "classic",
+  "blurb": "Critically endangered. Pairs perform a synchronised duet, flute-like and carrying for miles.",
+  "clips": [
+   {
+    "file": "crane_0.mp3",
+    "duration": 1.591,
+    "score": 26.38,
+    "xc_id": "988397",
+    "source": "https://xeno-canto.org/988397",
+    "recordist": "Peter Boesman",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "China"
+   },
+   {
+    "file": "crane_1.mp3",
+    "duration": 0.859,
+    "score": 25.4,
+    "xc_id": "988407",
+    "source": "https://xeno-canto.org/988407",
+    "recordist": "Peter Boesman",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "China"
+   },
+   {
+    "file": "crane_2.mp3",
+    "duration": 0.952,
+    "score": 18.15,
+    "xc_id": "988396",
+    "source": "https://xeno-canto.org/988396",
+    "recordist": "Peter Boesman",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "China"
+   }
+  ]
+ },
+ "bustard": {
+  "common": "Australian Bustard",
+  "scientific": "Ardeotis australis",
+  "pack": "weird",
+  "blurb": "Struts with an inflated throat sac hanging to its feet, producing a deep far-carrying roar.",
+  "clips": [
+   {
+    "file": "bustard_0.mp3",
+    "duration": 1.335,
+    "score": 5.23,
+    "xc_id": "156198",
+    "source": "https://xeno-canto.org/156198",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   }
+  ]
+ },
+ "turkey": {
+  "common": "Wild Turkey",
+  "scientific": "Meleagris gallopavo",
+  "pack": "classic",
+  "blurb": "The gobble carries a mile. Turkeys can also be startled into gobbling by thunder or car horns.",
+  "clips": [
+   {
+    "file": "turkey_0.mp3",
+    "duration": 1.033,
+    "score": 28.34,
+    "xc_id": "1003798",
+    "source": "https://xeno-canto.org/1003798",
+    "recordist": "Sue Riffe",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   },
+   {
+    "file": "turkey_1.mp3",
+    "duration": 1.939,
+    "score": 19.35,
+    "xc_id": "1140501",
+    "source": "https://xeno-canto.org/1140501",
+    "recordist": "Paul Marvin",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   },
+   {
+    "file": "turkey_2.mp3",
+    "duration": 1.01,
+    "score": 11.06,
+    "xc_id": "987123",
+    "source": "https://xeno-canto.org/987123",
+    "recordist": "Paul Driver",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   }
+  ]
+ }
+}
