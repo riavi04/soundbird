@@ -151,7 +151,7 @@ const CARDS = [
   { tune: true },
   { t: "Did my acoust whittle like that? :)" },
   { t: "If you did, you are in for a hell of a treat." },
-  { t: "I spent hours (and maybe more money in usage credits than I should have o.o) vibecoding this, so I hope you like it." },
+  { t: "I spent hours (and maybe more money on usage credits than I should have o.o) vibecoding this, so I hope you like it." },
   { t: "You can tinker around yourself and see what I made you - go wild, I hereby unleash this creation onto you!", enter: true },
 ];
 
