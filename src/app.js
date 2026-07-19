@@ -698,7 +698,9 @@ function buildAviary(filter = "all") {
     }).join("");
     const photo = PHOTOS[key];
     const photoHtml = photo
-      ? `<img class="photo" src="${photo.data}" alt="${sp.common}" loading="lazy" decoding="async">`
+      ? `<button class="shot" type="button" aria-label="See ${sp.common} in full">
+           <img class="photo" src="${photo.data}" alt="${sp.common}" loading="lazy" decoding="async">
+         </button>`
       : `<svg class="feather" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
            <path d="M50 12C34 14 20 26 16 42l-6 12 12-6c16-4 28-18 30-34z"/>
            <path d="M50 12L20 48"/>
@@ -734,8 +736,81 @@ function buildAviary(filter = "all") {
       toast(sp.common + " added");
     };
     cbox.appendChild(add);
+    const shot = card.querySelector(".shot");
+    if (shot) shot.onclick = () => openBird(key);
     grid.appendChild(card);
   });
+}
+
+/* ---------------- expanded bird card ---------------- */
+let sheetReturnFocus = null;
+
+function creditLines(key, sp, clipCount) {
+  const lines = sp.clips.slice(0, clipCount).map((c, i) => {
+    const src = c.source
+      ? `<a href="${c.source}" target="_blank" rel="noopener">${c.xc_id ? "XC" + c.xc_id : "listen"}</a>`
+      : "";
+    return `<span class="cline"><b>${i + 1}</b> ${c.recordist || "unknown"} · ${c.license || ""} · ${src}</span>`;
+  });
+  const p = PHOTOS[key];
+  if (p) {
+    lines.push(`<span class="cline">Photo ${p.photographer} · ${p.license}${
+      p.source ? ` · <a href="${p.source}" target="_blank" rel="noopener">Commons</a>` : ""}</span>`);
+  }
+  return lines.join("");
+}
+
+function openBird(key) {
+  const sp = BIRDS[key];
+  const photo = PHOTOS[key];
+  if (!sp) return;
+  const clips = Player.buffers[key] || [];
+  const sheet = $("#birdsheet");
+  const card = $("#birdsheetcard");
+
+  card.innerHTML = `
+    <button class="sheet-close" type="button" data-close aria-label="Close">&#215;</button>
+    ${photo ? `<img class="shot" src="${photo.data}" alt="${sp.common}">` : ""}
+    <div class="body">
+      <span class="tag ${sp.pack}">${sp.pack}</span>
+      <h3>${sp.common}</h3>
+      <div class="sci">${sp.scientific}</div>
+      <p class="blurb">${sp.blurb}</p>
+      <div class="clips"></div>
+      <div class="credit">Recorded by ${creditLines(key, sp, clips.length)}</div>
+    </div>`;
+
+  const cbox = card.querySelector(".clips");
+  clips.forEach((_, i) => {
+    const b = document.createElement("button");
+    b.className = "btn sm";
+    b.textContent = "clip " + (i + 1);
+    b.onclick = () => { Player.preview(key, i, 0); popBird(key); };
+    cbox.appendChild(b);
+  });
+  const add = document.createElement("button");
+  add.className = "btn sm gold";
+  add.textContent = "to sequencer";
+  add.onclick = () => {
+    addLane(key);
+    closeBird();
+    switchView("compose");
+    toast(sp.common + " added");
+  };
+  cbox.appendChild(add);
+
+  sheetReturnFocus = document.activeElement;
+  sheet.hidden = false;
+  card.querySelector(".sheet-close").focus();
+}
+
+function closeBird() {
+  const sheet = $("#birdsheet");
+  if (!sheet || sheet.hidden) return;
+  sheet.hidden = true;
+  $("#birdsheetcard").innerHTML = "";
+  if (sheetReturnFocus && sheetReturnFocus.focus) sheetReturnFocus.focus();
+  sheetReturnFocus = null;
 }
 
 /* ---------------- views ---------------- */
@@ -756,7 +831,11 @@ function boot() {
     if (e.target.id === "enterbtn") return;
     advance();
   });
+  $("#birdsheet").addEventListener("click", (e) => {
+    if (e.target.hasAttribute("data-close")) closeBird();
+  });
   document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !$("#birdsheet").hidden) { closeBird(); return; }
     if ($("#intro").classList.contains("hide")) return;
     if (e.key === " " || e.key === "Enter" || e.key === "ArrowRight") { e.preventDefault(); advance(); }
   });

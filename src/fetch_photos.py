@@ -12,8 +12,11 @@ WIKI = "https://en.wikipedia.org/w/api.php"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
 UA = "sound-bird-hobby-project/0.1 (personal gift project; contact ria@prism-global.com)"
 
-OUT_W, OUT_H = 480, 300
-QUALITY = 66
+# Stored uncropped, fitted inside a box. The card crops it to a tidy grid with
+# object-fit, and the expanded view shows the whole frame, so no bird ends up
+# permanently beheaded by a crop chosen without looking at it.
+MAX_DIM = 620
+QUALITY = 64
 
 # Anything that does not permit reuse is skipped rather than shown. GFDL is a
 # free license but obliges you to ship its full text with the work, which is
@@ -53,7 +56,7 @@ def lead_image(title):
 def commons_info(file_title):
     try:
         d = api(COMMONS, {"action": "query", "titles": file_title, "prop": "imageinfo",
-                          "iiprop": "url|extmetadata|mime", "iiurlwidth": str(OUT_W * 2)})
+                          "iiprop": "url|extmetadata|mime", "iiurlwidth": str(MAX_DIM * 2)})
     except Exception as e:
         print(f"   ! commons lookup failed: {e}", file=sys.stderr)
         return None
@@ -107,16 +110,10 @@ def process(url, dest):
     im = Image.open(io.BytesIO(raw))
     if im.mode in ("RGBA", "P", "LA"):
         im = im.convert("RGB")
-    # Cover-crop to the card's aspect ratio, biased slightly above centre
-    # because the bird is usually in the upper half of a wildlife photo.
-    tw, th = OUT_W, OUT_H
     sw, sh = im.size
-    scale = max(tw / sw, th / sh)
-    nw, nh = round(sw * scale), round(sh * scale)
-    im = im.resize((nw, nh), Image.LANCZOS)
-    left = (nw - tw) // 2
-    top = max(0, int((nh - th) * 0.40))
-    im = im.crop((left, top, left + tw, top + th))
+    scale = min(MAX_DIM / max(sw, sh), 1.0)      # never upscale
+    if scale < 1.0:
+        im = im.resize((max(1, round(sw * scale)), max(1, round(sh * scale))), Image.LANCZOS)
     im.save(dest, "WEBP", quality=QUALITY, method=6)
     return os.path.getsize(dest)
 

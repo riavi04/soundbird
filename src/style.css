@@ -304,9 +304,28 @@ select{
   display:flex;flex-direction:column;
 }
 .bcard:hover{border-color:var(--line2);transform:translateY(-2px)}
+/* The photo is a window onto the full picture; hovering leans in, clicking
+   opens the whole frame. */
+.bcard .shot{
+  position:relative;display:block;width:100%;overflow:hidden;
+  border-bottom:1px solid var(--line);cursor:zoom-in;background:var(--panel2);
+}
 .bcard .photo{
   display:block;width:100%;aspect-ratio:8/5;object-fit:cover;
-  background:var(--panel2);border-bottom:1px solid var(--line);
+  transition:transform .45s cubic-bezier(.2,.8,.3,1);
+}
+.bcard:hover .photo,.bcard .shot:focus-visible .photo{transform:scale(1.07)}
+.bcard .shot::after{
+  content:"open";position:absolute;right:9px;bottom:9px;
+  font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--txt);background:rgba(6,12,21,.72);border:1px solid var(--line2);
+  padding:3px 9px;border-radius:999px;opacity:0;transition:opacity .25s;
+  pointer-events:none;
+}
+.bcard:hover .shot::after,.bcard .shot:focus-visible::after{opacity:1}
+@media (prefers-reduced-motion:reduce){
+  .bcard .photo{transition:none}
+  .bcard:hover .photo{transform:none}
 }
 .bcard .body{padding:15px 18px 17px;display:flex;flex-direction:column;flex:1}
 .bcard .body .credit{margin-top:auto}
@@ -343,6 +362,57 @@ select{
 .count{
   color:var(--muted);font-size:.75rem;font-family:var(--mono);
   font-variant-numeric:tabular-nums;letter-spacing:.02em;
+}
+
+/* ---------------- expanded bird card ---------------- */
+/* The grid crops photos to keep the cards even. This shows the whole frame,
+   so nothing is lost to a crop that was chosen without anyone looking at it. */
+.sheet{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:20px}
+.sheet[hidden]{display:none}
+.sheet-back{
+  position:absolute;inset:0;background:rgba(3,7,14,.78);
+  backdrop-filter:blur(3px);animation:fadeIn .2s ease both;
+}
+.sheet-card{
+  position:relative;z-index:1;width:min(680px,100%);max-height:calc(100vh - 40px);
+  overflow-y:auto;border-radius:16px;border:1px solid var(--line2);
+  background:linear-gradient(180deg,#0d1a2c,#0a1421);
+  box-shadow:0 30px 90px rgba(0,0,0,.7);
+  animation:sheetIn .32s cubic-bezier(.2,1.2,.35,1) both;
+}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes sheetIn{
+  from{opacity:0;transform:translateY(18px) scale(.96)}
+  to{opacity:1;transform:none}
+}
+.sheet-card .shot{
+  width:100%;max-height:52vh;object-fit:contain;display:block;
+  background:#060c15;border-bottom:1px solid var(--line);
+}
+.sheet-card .body{padding:20px 24px 24px}
+.sheet-card h3{font-family:var(--serif);font-size:1.7rem;font-weight:400;margin:0;line-height:1.15}
+.sheet-card .sci{font-style:italic;color:var(--muted);font-size:.9rem;margin-bottom:12px}
+.sheet-card .blurb{font-size:.98rem;color:#cfdcee;margin:0 0 18px;max-width:60ch}
+.sheet-card .clips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.sheet-card .credit{
+  font-size:.72rem;color:var(--muted);border-top:1px solid var(--line);
+  padding-top:12px;line-height:1.65;
+}
+.sheet-card .credit .cline{display:block}
+.sheet-card .credit .cline b{display:inline-block;min-width:1.1em;color:var(--dim);font-weight:500}
+.sheet-close{
+  position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;
+  border:1px solid var(--line2);background:rgba(6,12,21,.72);color:var(--txt);
+  font-size:1.1rem;line-height:1;display:grid;place-items:center;transition:.2s;
+}
+.sheet-close:hover{background:rgba(127,212,184,.18);border-color:var(--accent)}
+@media (max-width:640px){
+  .sheet{padding:12px}
+  .sheet-card h3{font-size:1.35rem}
+  .sheet-card .body{padding:16px 17px 20px}
+}
+@media (prefers-reduced-motion:reduce){
+  .sheet-back,.sheet-card{animation:none}
 }
 
 /* ---------------- bird pop-ups ---------------- */
