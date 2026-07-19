@@ -1,0 +1,354 @@
+{
+ "thicknee": {
+  "file": "thicknee.webp",
+  "bytes": 31744,
+  "photographer": "Dominic Sherony",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Peruvian_Thick-knee_(Burhinus_superciliaris),_crop.jpg"
+ },
+ "potoo": {
+  "file": "potoo.webp",
+  "bytes": 8262,
+  "photographer": "Hector Bottai",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Nyctibius_grandis_-_Great_Potoo;_Apiac%C3%A1s,_Mato_Grosso,_Brazil.jpg"
+ },
+ "loon": {
+  "file": "loon.webp",
+  "bytes": 26108,
+  "photographer": "John Picken from Chicago, USA",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gavia_immer_-Minocqua,_Wisconsin,_USA_-swimming-8.jpg"
+ },
+ "kookaburra": {
+  "file": "kookaburra.webp",
+  "bytes": 14192,
+  "photographer": "Photo by: Paulweberphoto - paulweberphoto.com",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Laughing_Kookaburra_1.jpg"
+ },
+ "cassowary": {
+  "file": "cassowary.webp",
+  "bytes": 28856,
+  "photographer": "Summerdrought",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Southern_Cassowary_7071.jpg"
+ },
+ "shoebill": {
+  "file": "shoebill.webp",
+  "bytes": 21758,
+  "photographer": "Bob Owen",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Balaeniceps_rex_-Ueno_Zoo,_Tokyo,_Japan-8a.jpg"
+ },
+ "piha": {
+  "file": "piha.webp",
+  "bytes": 12412,
+  "photographer": "Hector Bottai",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Lipaugus_vociferans_-_Screaming_Piha;_Manaus,_Amazonas,_Brazil.jpg"
+ },
+ "ptarmigan": {
+  "file": "ptarmigan.webp",
+  "bytes": 30726,
+  "photographer": "Yathin S Krishnappa",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Lagopus_lagopus_adult_(Denali,_2010).jpg"
+ },
+ "quail": {
+  "file": "quail.webp",
+  "bytes": 20516,
+  "photographer": "christoph_moning",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Coturnix_coturnix,_Fraunberg,_Bayern,_Deutschland_1,_Ausschnitt.jpg"
+ },
+ "woodcock": {
+  "file": "woodcock.webp",
+  "bytes": 26552,
+  "photographer": "Rhododendrites",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:American_woodcock_(95252).jpg"
+ },
+ "kiwi": {
+  "file": "kiwi.webp",
+  "bytes": 26740,
+  "photographer": "Maungatautari Ecological Island Trust",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:TeTuatahianui.jpg"
+ },
+ "sagegrouse": {
+  "file": "sagegrouse.webp",
+  "bytes": 18648,
+  "photographer": "Pacific Southwest Region U.S. Fish and Wildlife Service from Sacramento, US",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Centrocercus_urophasianus_-USA_-male-8.jpg"
+ },
+ "bellbird": {
+  "file": "bellbird.webp",
+  "bytes": 2548,
+  "photographer": "Hector Bottai from S\u00e3o Paulo, Brasil",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:White_Bellbird-Araponga-da-amaz%C3%B4nia-Campanero_blanco_(Procnias_albus)_male.jpg"
+ },
+ "penguin": {
+  "file": "penguin.webp",
+  "bytes": 20136,
+  "photographer": "Godot13",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:SGI-2016-South_Georgia_(Fortuna_Bay)%E2%80%93King_penguin_(Aptenodytes_patagonicus)_04.jpg"
+ },
+ "starling": {
+  "file": "starling.webp",
+  "bytes": 32444,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Common_starling_(Sturnus_vulgaris)_breeding_male_Marken.jpg"
+ },
+ "crane": {
+  "file": "crane.webp",
+  "bytes": 26144,
+  "photographer": "BS Thurner Hof",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Schneekranich_Grus_leucogeranus_090501_We_147.JPG"
+ },
+ "bustard": {
+  "file": "bustard.webp",
+  "bytes": 7828,
+  "photographer": "JJ Harrison (https://www.jjharrison.com.au/)",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Australian_Bustard_2_-_Mt_Carbine.jpg"
+ },
+ "turkey": {
+  "file": "turkey.webp",
+  "bytes": 32846,
+  "photographer": "Paul Danese",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:20260428_tom_wild_turkey_matthaei_botanical_gardens_PD08952.jpg"
+ },
+ "hoatzin": {
+  "file": "hoatzin.webp",
+  "bytes": 11640,
+  "photographer": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Hoatzin_(Opisthocomus_hoazin)_Rio_Napo.jpg"
+ },
+ "capuchinbird": {
+  "file": "capuchinbird.webp",
+  "bytes": 16550,
+  "photographer": "Greg Hume",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Capuchinbird_-_Perissocephalus_tricolor.jpg"
+ },
+ "frogmouth": {
+  "file": "frogmouth.webp",
+  "bytes": 12718,
+  "photographer": "JJ Harrison (https://www.jjharrison.com.au/)",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Tawny_Frogmouth_-_Sydney_Olympic_Park.jpg"
+ },
+ "kakapo": {
+  "file": "kakapo.webp",
+  "bytes": 23984,
+  "photographer": "Department of Conservation",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sirocco_full_length_portrait.jpg"
+ },
+ "emu": {
+  "file": "emu.webp",
+  "bytes": 16390,
+  "photographer": "JJ Harrison (https://www.jjharrison.com.au/)",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Emu_1_-_Tidbinbilla.jpg"
+ },
+ "bittern": {
+  "file": "bittern.webp",
+  "bytes": 9102,
+  "photographer": "Francesco Veronesi from Italy",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Eurasian_Bittern_-_Torrile_-_Italy_4528_(15409347121).jpg"
+ },
+ "corncrake": {
+  "file": "corncrake.webp",
+  "bytes": 14216,
+  "photographer": "Alpo Roikola",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ruisr%C3%A4%C3%A4kk%C3%A4.JPG"
+ },
+ "bowerbird": {
+  "file": "bowerbird.webp",
+  "bytes": 47260,
+  "photographer": "JJ Harrison",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Satin_Bowerbird_at_Bower_6533.jpg"
+ },
+ "guineafowl": {
+  "file": "guineafowl.webp",
+  "bytes": 25256,
+  "photographer": "New Jersey Birds",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Numida_meleagris_-Kruger_National_Park,_South_Africa-8a.jpg"
+ },
+ "peafowl": {
+  "file": "peafowl.webp",
+  "bytes": 19460,
+  "photographer": "Kandukuru Nagarjun from Bangalore, India",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Peacock_on_tree_(52077240794).jpg"
+ },
+ "bellbird3": {
+  "file": "bellbird3.webp",
+  "bytes": 26844,
+  "photographer": "Noel Reynolds",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Three-wattled_Bellbird_(Procnias_tricarunculata)_(5818992683).jpg"
+ },
+ "bellbirdb": {
+  "file": "bellbirdb.webp",
+  "bytes": 11700,
+  "photographer": "Steve Garvie from Dunfermline, Fife, Scotland",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_Rainbirder_-_Bearded_Bellbird_(Procnias_averano)_male_calling.jpg"
+ },
+ "musicianwren": {
+  "file": "musicianwren.webp",
+  "bytes": 8802,
+  "photographer": "Hector Bottai",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Cyphorhinus_arada_arada_-_Musician_wren,_Pte._Figueiredo,_Amazonas,_Brazil.jpg"
+ },
+ "superbstarling": {
+  "file": "superbstarling.webp",
+  "bytes": 6788,
+  "photographer": "Sumeet Moghe",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Superb_Starling_Portrait.jpg"
+ },
+ "chachalaca": {
+  "file": "chachalaca.webp",
+  "bytes": 10168,
+  "photographer": "Chuck Homler d/b/a FocusOnwWildlife",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Plain_Chachalaca_Roadside.png"
+ },
+ "nightingale": {
+  "file": "nightingale.webp",
+  "bytes": 13922,
+  "photographer": "Warrieboy",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Luscinia_megarhynchos_-_Common_nightingale_-_Nachtegaal_(cropped).jpg"
+ },
+ "cuckoo": {
+  "file": "cuckoo.webp",
+  "bytes": 7426,
+  "photographer": "Andy  Morffew from Itchen Abbas, Hampshire, UK",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Cuckoo_(51169010335).jpg"
+ },
+ "mockingbird": {
+  "file": "mockingbird.webp",
+  "bytes": 8662,
+  "photographer": "Rhododendrites",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Mockingbird_in_Bay_Ridge_(85082).jpg"
+ },
+ "raven": {
+  "file": "raven.webp",
+  "bytes": 21168,
+  "photographer": "Frank Schulenburg",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg"
+ },
+ "magpie": {
+  "file": "magpie.webp",
+  "bytes": 10748,
+  "photographer": "JJ Harrison (https://www.jjharrison.com.au/)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Cracticus_tibicen_hypoleuca_male_domain.jpg"
+ },
+ "butcherbird": {
+  "file": "butcherbird.webp",
+  "bytes": 13134,
+  "photographer": "Vicki Nunn",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Pied_Butcherbird_-_Male_(Cracticus_nigrogularis)_03.JPG"
+ },
+ "barredowl": {
+  "file": "barredowl.webp",
+  "bytes": 12504,
+  "photographer": "Mdf",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "source": "https://commons.wikimedia.org/wiki/File:Strix-varia-005.jpg"
+ },
+ "barnowl": {
+  "file": "barnowl.webp",
+  "bytes": 12782,
+  "photographer": "Steven Ward",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Barn_Owl,_Lancashire.jpg"
+ },
+ "blackbird": {
+  "file": "blackbird.webp",
+  "bytes": 15486,
+  "photographer": "Andreas Trepte",
+  "license": "CC BY-SA 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+  "source": "https://commons.wikimedia.org/wiki/File:Common_Blackbird.jpg"
+ },
+ "sandhill": {
+  "file": "sandhill.webp",
+  "bytes": 6630,
+  "photographer": "JeffreyGammon",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sandhill_Crane_JG.jpg"
+ },
+ "lyrebird": {
+  "file": "lyrebird.webp",
+  "bytes": 28266,
+  "photographer": "Ron Knight from Seaford, East Sussex, United Kingdom",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Superb_Lyrebird_(Menura_novaehollandiae)_(8079617147).jpg"
+ }
+}

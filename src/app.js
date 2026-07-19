@@ -2,6 +2,7 @@
 
 const BIRDS = window.BIRD_DATA || {};
 const AUDIO = window.BIRD_AUDIO || {};
+const PHOTOS = window.BIRD_PHOTOS || {};
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => Array.from(document.querySelectorAll(s));
 
@@ -27,19 +28,24 @@ function loadAll() {
     for (const [key, sp] of Object.entries(BIRDS)) {
       sp.clips.forEach((c, i) => jobs.push([key, i, c.file]));
     }
+    // Decoded in batches rather than one at a time: with well over a hundred
+    // clips, sequential decoding is the slowest part of opening the page.
     let done = 0;
-    for (const [key, i, file] of jobs) {
-      const b64 = AUDIO[file];
-      if (b64) {
-        try {
-          const buf = await Player.ctx.decodeAudioData(b64ToBuf(b64));
-          if (!Player.buffers[key]) Player.buffers[key] = [];
-          Player.buffers[key][i] = buf;
-        } catch (e) {
-          console.warn("could not decode", file, e);
+    const BATCH = 8;
+    for (let start = 0; start < jobs.length; start += BATCH) {
+      await Promise.all(jobs.slice(start, start + BATCH).map(async ([key, i, file]) => {
+        const b64 = AUDIO[file];
+        if (b64) {
+          try {
+            const buf = await Player.ctx.decodeAudioData(b64ToBuf(b64));
+            if (!Player.buffers[key]) Player.buffers[key] = [];
+            Player.buffers[key][i] = buf;
+          } catch (e) {
+            console.warn("could not decode", file, e);
+          }
         }
-      }
-      done++;
+        done++;
+      }));
       const bar = $("#loadbar");
       if (bar) bar.style.width = (done / jobs.length) * 100 + "%";
     }
@@ -170,17 +176,20 @@ function enterApp() {
   buildAviary();
   buildSequencer();
   renderSaved();
-  if (!currentSong) generate();
+  if (!currentSong) generate(false);
 }
 
 /* ---------------- generate view ---------------- */
-function generate() {
+/* play=false is used when the app first opens: a track is ready and waiting,
+   but nothing makes noise until he asks it to. */
+function generate(play = true) {
   const pool = poolFor(curPack);
   if (pool.length < 2) { toast("Not enough birds in that flock"); return; }
   currentSong = generateSong(null, curMood, pool);
   renderNow();
   renderLanes();
-  startPlayback();
+  if (play) startPlayback();
+  else setPlayIcon(false);
 }
 
 function renderNow() {
@@ -514,7 +523,15 @@ function randomisePattern() {
 function buildAviary(filter = "all") {
   const grid = $("#aviarygrid");
   grid.innerHTML = "";
-  const list = playableBirds().filter(([, v]) => filter === "all" || v.pack === filter);
+  const all = playableBirds();
+  const list = all.filter(([, v]) => filter === "all" || v.pack === filter);
+  const counter = $("#aviarycount");
+  if (counter) {
+    const clips = list.reduce((a, [k]) => a + Player.buffers[k].length, 0);
+    counter.textContent = filter === "all"
+      ? `${all.length} birds, ${clips} sounds`
+      : `${list.length} of ${all.length} birds`;
+  }
   if (!list.length) { grid.innerHTML = '<div class="empty">No birds in that flock.</div>'; return; }
   list.forEach(([key, sp]) => {
     const card = document.createElement("div");
@@ -526,17 +543,27 @@ function buildAviary(filter = "all") {
         : "";
       return `<span class="cline"><b>${i + 1}</b> ${c.recordist || "unknown"} · ${c.license || ""} · ${src}</span>`;
     }).join("");
+    const photo = PHOTOS[key];
+    const photoHtml = photo
+      ? `<img class="photo" src="${photo.data}" alt="${sp.common}" loading="lazy" decoding="async">`
+      : `<svg class="feather" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+           <path d="M50 12C34 14 20 26 16 42l-6 12 12-6c16-4 28-18 30-34z"/>
+           <path d="M50 12L20 48"/>
+         </svg>`;
+    const photoCredit = photo
+      ? `<span class="cline">Photo ${photo.photographer} · ${photo.license}${
+           photo.source ? ` · <a href="${photo.source}" target="_blank" rel="noopener">Commons</a>` : ""}</span>`
+      : "";
     card.innerHTML = `
-      <svg class="feather" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M50 12C34 14 20 26 16 42l-6 12 12-6c16-4 28-18 30-34z"/>
-        <path d="M50 12L20 48"/>
-      </svg>
-      <span class="tag ${sp.pack}">${sp.pack}</span>
-      <h3>${sp.common}</h3>
-      <div class="sci">${sp.scientific}</div>
-      <p class="blurb">${sp.blurb}</p>
-      <div class="clips"></div>
-      <div class="credit">Recorded by ${credits}</div>`;
+      ${photoHtml}
+      <div class="body">
+        <span class="tag ${sp.pack}">${sp.pack}</span>
+        <h3>${sp.common}</h3>
+        <div class="sci">${sp.scientific}</div>
+        <p class="blurb">${sp.blurb}</p>
+        <div class="clips"></div>
+        <div class="credit">Recorded by ${credits}${photoCredit}</div>
+      </div>`;
     const cbox = card.querySelector(".clips");
     clips.forEach((_, i) => {
       const b = document.createElement("button");
@@ -596,7 +623,8 @@ function boot() {
     buildAviary(b.dataset.pack);
   }));
 
-  $("#genbtn").onclick = generate;
+  // Wrapped so the click event is not passed through as the play argument.
+  $("#genbtn").onclick = () => generate(true);
   $("#playbtn").onclick = () => {
     if (Player.playing && Player.mode === "song") { Player.stop(); setPlayIcon(false); }
     else startPlayback();

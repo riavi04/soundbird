@@ -19,22 +19,49 @@ DEFAULT_MAX = 2.5
 MAX_DUR = {           # birds whose calls are genuinely long
     "loon": 3.6, "kookaburra": 4.5, "kiwi": 3.2, "penguin": 3.2,
     "crane": 3.0, "lyrebird": 3.0, "starling": 2.6, "turkey": 2.6,
+    "nightingale": 3.2, "magpie": 3.4, "butcherbird": 3.2, "mockingbird": 3.0,
+    "musicianwren": 3.0, "kakapo": 3.2, "cassowary": 3.2, "emu": 3.0,
+    "bittern": 3.0, "bowerbird": 3.0, "superbstarling": 3.0, "raven": 2.8,
+    "hoatzin": 3.0, "sandhill": 3.0, "chachalaca": 3.0, "peafowl": 3.0,
 }
 MIN_DUR = 0.42
-# Calls that really do live in the low band; do not penalise them for it.
-LOW_BIRDS = {"sagegrouse", "bustard", "penguin", "kiwi", "crane", "turkey", "shoebill"}
+# Calls that really do live in the low band, so the rumble penalty is skipped
+# and the high-pass is set well below the call. A cassowary boom sits around
+# 25 Hz and the default 170 Hz filter would erase it completely.
+LOW_BIRDS = {"sagegrouse", "bustard", "penguin", "kiwi", "crane", "turkey", "shoebill",
+             "cassowary", "emu", "bittern", "kakapo", "frogmouth", "hoatzin", "sandhill"}
 
 
 def run(cmd):
     return subprocess.run(cmd, capture_output=True)
 
 
+# Some uploads are hour-long soundscapes running to hundreds of megabytes.
+# They are no more useful than a short recording here and cost a great deal to
+# fetch, so they are skipped rather than downloaded.
+MAX_BYTES = 40 * 1024 * 1024
+
+
 def download(url, path):
     if os.path.exists(path) and os.path.getsize(path) > 2000:
         return
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=90) as r, open(path, "wb") as f:
-        f.write(r.read())
+    with urllib.request.urlopen(req, timeout=90) as r:
+        declared = r.headers.get("Content-Length")
+        if declared and int(declared) > MAX_BYTES:
+            raise ValueError(f"too large ({int(declared) // 1024 // 1024} MB)")
+        got = 0
+        with open(path, "wb") as f:
+            while True:
+                chunk = r.read(262144)
+                if not chunk:
+                    break
+                got += len(chunk)
+                if got > MAX_BYTES:      # servers that omit Content-Length
+                    f.close()
+                    os.remove(path)
+                    raise ValueError("exceeded size cap mid-download")
+                f.write(chunk)
     time.sleep(0.4)          # stay well under any sane rate limit
 
 
@@ -163,7 +190,7 @@ def best_phrase(x, max_dur, low_ok):
 
 
 def cut(src, dst, start_s, dur_s, low=False):
-    hp = "55" if low else "170"
+    hp = "22" if low else "170"
     af = (f"highpass=f={hp},afade=t=in:st=0:d=0.015,"
           f"afade=t=out:st={max(0.02, dur_s - 0.05):.3f}:d=0.05,"
           f"loudnorm=I=-15:TP=-1.5:LRA=11")
@@ -193,7 +220,7 @@ def main():
             cands.append(c)
         # Enough variety to pick a good phrase without pulling a lot of data
         # from a volunteer-run archive.
-        cands = cands[:8]
+        cands = cands[:6]
         if not cands:
             print(f"!! {key}: no candidates", file=sys.stderr)
             continue

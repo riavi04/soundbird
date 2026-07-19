@@ -13,6 +13,7 @@ src/
   harvest_gbif.py   find remix-legal recordings via the GBIF open API
   make_clips.py     download, score and cut the best phrase from each recording
   qa.py             objective quality check on the cut clips
+  fetch_photos.py   one freely licensed photo per species from Wikimedia
   check_ids.py      static check that js and markup agree on element ids
   build.py          inline everything into one self-contained HTML file
   engine.js         Web Audio graph, synth voices, bird playback
@@ -35,10 +36,18 @@ dist/
 ```sh
 python3 src/harvest_gbif.py assets/gbif.json     # refresh candidates
 python3 src/make_clips.py assets/gbif.json assets/clips
+python3 src/fetch_photos.py assets/gbif.json assets/photos
 python3 src/qa.py assets/clips                   # check for silence, rumble, cut-offs
 node src/test_gen.js                             # check the song logic
+python3 src/check_ids.py                         # check js and markup agree
 python3 src/build.py dist/sound-bird.html
 ```
+
+To add a bird, add a row to `SPECIES` in `harvest_gbif.py` with its scientific
+name, a pack and a one-line blurb, then run the harvest and pass just that
+bird's key to `make_clips.py` and `fetch_photos.py`. If its call is genuinely
+low-pitched, add the key to `LOW_BIRDS` in `make_clips.py` first, or the
+default high-pass will filter the call away.
 
 `make_clips.py` caches downloads in `assets/raw/`, so re-runs are fast. Pass
 bird keys as extra arguments to rebuild only those, for example:
@@ -72,6 +81,17 @@ credit the recordist, and keep it non-commercial. Fine for a personal gift, not
 fine for anything sold or running ads. Every clip credits its recordist and
 links back to the original recording in the Aviary tab, which satisfies the
 attribution requirement.
+
+Photographs come from Wikimedia Commons, taking the lead image of each species
+article. `fetch_photos.py` checks the license before using anything and falls
+back to a Commons search when the lead image is not usable. GFDL images are
+skipped: GFDL is a free license, but it obliges you to distribute its full text
+alongside the work, which is not practical on a single page.
+
+The photos are a **mix of CC BY, CC BY-SA and public domain**, and each card
+names its photographer. Note that most are ShareAlike, and cropping counts as
+making an adaptation. That is fine as it stands, but if this ever gets
+published somewhere public, the ShareAlike terms travel with those images.
 
 ## Notes
 

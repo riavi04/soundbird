@@ -673,5 +673,639 @@
     "country": "United States of America"
    }
   ]
+ },
+ "hoatzin": {
+  "common": "Hoatzin",
+  "scientific": "Opisthocomus hoazin",
+  "pack": "weird",
+  "blurb": "Ferments leaves in a chamber in its gut, smells strongly of manure, and grunts and hisses about it.",
+  "clips": [
+   {
+    "file": "hoatzin_0.mp3",
+    "duration": 0.464,
+    "score": 5.69,
+    "xc_id": "915941",
+    "source": "https://xeno-canto.org/915941",
+    "recordist": "Sara L. Castro (Museo de Historia Natural Unillanos)",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Colombia"
+   },
+   {
+    "file": "hoatzin_1.mp3",
+    "duration": 1.486,
+    "score": 5.15,
+    "xc_id": "1088028",
+    "source": "https://xeno-canto.org/1088028",
+    "recordist": "Aladdin",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guyana"
+   },
+   {
+    "file": "hoatzin_2.mp3",
+    "duration": 1.184,
+    "score": 4.11,
+    "xc_id": "1105732",
+    "source": "https://xeno-canto.org/1105732",
+    "recordist": "Daisy  Utitiaj Nunink",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   }
+  ]
+ },
+ "capuchinbird": {
+  "common": "Capuchinbird",
+  "scientific": "Perissocephalus tricolor",
+  "pack": "tropical",
+  "blurb": "A bald orange head on a heavy brown body, droning like a distant chainsaw idling in the canopy.",
+  "clips": [
+   {
+    "file": "capuchinbird_0.mp3",
+    "duration": 1.509,
+    "score": 21.0,
+    "xc_id": "1033852",
+    "source": "https://xeno-canto.org/1033852",
+    "recordist": "Richard E. Webster",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guyana"
+   },
+   {
+    "file": "capuchinbird_1.mp3",
+    "duration": 2.415,
+    "score": 21.0,
+    "xc_id": "1033849",
+    "source": "https://xeno-canto.org/1033849",
+    "recordist": "Richard E. Webster",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guyana"
+   },
+   {
+    "file": "capuchinbird_2.mp3",
+    "duration": 2.543,
+    "score": 4.19,
+    "xc_id": "899376",
+    "source": "https://xeno-canto.org/899376",
+    "recordist": "Brice de la Croix",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "French Guiana"
+   }
+  ]
+ },
+ "frogmouth": {
+  "common": "Tawny Frogmouth",
+  "scientific": "Podargus strigoides",
+  "pack": "weird",
+  "blurb": "Not an owl. Spends the day impersonating a broken branch, then calls with a soft repeated oom.",
+  "clips": [
+   {
+    "file": "frogmouth_0.mp3",
+    "duration": 2.543,
+    "score": 9.99,
+    "xc_id": "1084954",
+    "source": "https://xeno-canto.org/1084954",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "frogmouth_1.mp3",
+    "duration": 0.464,
+    "score": 4.55,
+    "xc_id": "1084177",
+    "source": "https://xeno-canto.org/1084177",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "frogmouth_2.mp3",
+    "duration": 0.488,
+    "score": 3.28,
+    "xc_id": "938380",
+    "source": "https://xeno-canto.org/938380",
+    "recordist": "Drew Davison",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   }
+  ]
+ },
+ "kakapo": {
+  "common": "Kakapo",
+  "scientific": "Strigops habroptila",
+  "pack": "weird",
+  "blurb": "A flightless night parrot. Males dig a bowl in the earth and boom into it for hours to throw the sound.",
+  "clips": [
+   {
+    "file": "kakapo_0.mp3",
+    "duration": 1.184,
+    "score": 30.0,
+    "xc_id": "295659",
+    "source": "https://xeno-canto.org/295659",
+    "recordist": "Johannes Fischer",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "New Zealand"
+   }
+  ]
+ },
+ "cassowary": {
+  "common": "Southern Cassowary",
+  "scientific": "Casuarius casuarius",
+  "pack": "weird",
+  "blurb": "Its boom sits at the very bottom of human hearing, low enough that you feel it before you hear it.",
+  "clips": [
+   {
+    "file": "cassowary_0.mp3",
+    "duration": 2.287,
+    "score": 21.09,
+    "xc_id": "482590",
+    "source": "https://xeno-canto.org/482590",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "cassowary_1.mp3",
+    "duration": 3.239,
+    "score": 4.58,
+    "xc_id": "316215",
+    "source": "https://xeno-canto.org/316215",
+    "recordist": "Phil Gregory",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "cassowary_2.mp3",
+    "duration": 1.451,
+    "score": 4.56,
+    "xc_id": "1066433",
+    "source": "https://xeno-canto.org/1066433",
+    "recordist": "Peter Boesman",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   }
+  ]
+ },
+ "emu": {
+  "common": "Emu",
+  "scientific": "Dromaius novaehollandiae",
+  "pack": "weird",
+  "blurb": "Females drum. The sound comes from an inflatable pouch in the neck and carries over a mile.",
+  "clips": [
+   {
+    "file": "emu_0.mp3",
+    "duration": 0.464,
+    "score": 10.35,
+    "xc_id": "575654",
+    "source": "https://xeno-canto.org/575654",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "emu_1.mp3",
+    "duration": 0.464,
+    "score": 9.07,
+    "xc_id": "575653",
+    "source": "https://xeno-canto.org/575653",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "emu_2.mp3",
+    "duration": 0.464,
+    "score": 5.96,
+    "xc_id": "938430",
+    "source": "https://xeno-canto.org/938430",
+    "recordist": "Eddy Smith",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   }
+  ]
+ },
+ "bittern": {
+  "common": "Eurasian Bittern",
+  "scientific": "Botaurus stellaris",
+  "pack": "weird",
+  "blurb": "Hides in the reeds and booms like someone blowing across a bottle. Can be heard three miles off.",
+  "clips": [
+   {
+    "file": "bittern_0.mp3",
+    "duration": 0.464,
+    "score": 5.69,
+    "xc_id": "1072785",
+    "source": "https://xeno-canto.org/1072785",
+    "recordist": "Stef van Zimmeren",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Netherlands"
+   },
+   {
+    "file": "bittern_1.mp3",
+    "duration": 0.813,
+    "score": 3.24,
+    "xc_id": "1072051",
+    "source": "https://xeno-canto.org/1072051",
+    "recordist": "Martin Fousert",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Netherlands"
+   },
+   {
+    "file": "bittern_2.mp3",
+    "duration": 0.464,
+    "score": 2.24,
+    "xc_id": "1071961",
+    "source": "https://xeno-canto.org/1071961",
+    "recordist": "guus van duin",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Netherlands"
+   }
+  ]
+ },
+ "corncrake": {
+  "common": "Corncrake",
+  "scientific": "Crex crex",
+  "pack": "weird",
+  "blurb": "Two hard rasps repeated all night, like a comb dragged over a matchbox, from a bird you never see.",
+  "clips": [
+   {
+    "file": "corncrake_0.mp3",
+    "duration": 1.544,
+    "score": 4.26,
+    "xc_id": "1136495",
+    "source": "https://xeno-canto.org/1136495",
+    "recordist": "Th\u00e9o Treels",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France"
+   },
+   {
+    "file": "corncrake_1.mp3",
+    "duration": 0.464,
+    "score": 3.98,
+    "xc_id": "1138283",
+    "source": "https://xeno-canto.org/1138283",
+    "recordist": "Anders Andersson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Sweden"
+   },
+   {
+    "file": "corncrake_2.mp3",
+    "duration": 0.464,
+    "score": 3.22,
+    "xc_id": "1135287",
+    "source": "https://xeno-canto.org/1135287",
+    "recordist": "Marketa Rusarova",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Czechia"
+   }
+  ]
+ },
+ "bowerbird": {
+  "common": "Satin Bowerbird",
+  "scientific": "Ptilonorhynchus violaceus",
+  "pack": "weird",
+  "blurb": "Builds an avenue of sticks, decorates it with blue objects, and mimics any machinery it has heard.",
+  "clips": [
+   {
+    "file": "bowerbird_0.mp3",
+    "duration": 1.3,
+    "score": 27.57,
+    "xc_id": "1084932",
+    "source": "https://xeno-canto.org/1084932",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "bowerbird_1.mp3",
+    "duration": 0.488,
+    "score": 10.43,
+    "xc_id": "1028864",
+    "source": "https://xeno-canto.org/1028864",
+    "recordist": "Colin Reid",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   },
+   {
+    "file": "bowerbird_2.mp3",
+    "duration": 0.882,
+    "score": 8.16,
+    "xc_id": "1031579",
+    "source": "https://xeno-canto.org/1031579",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Australia"
+   }
+  ]
+ },
+ "guineafowl": {
+  "common": "Helmeted Guineafowl",
+  "scientific": "Numida meleagris",
+  "pack": "weird",
+  "blurb": "A bony casque on its head and a two-note alarm it keeps up as long as anything is out of place.",
+  "clips": [
+   {
+    "file": "guineafowl_0.mp3",
+    "duration": 2.543,
+    "score": 10.22,
+    "xc_id": "1082944",
+    "source": "https://xeno-canto.org/1082944",
+    "recordist": "African Bioacoustics Community",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "South Africa"
+   },
+   {
+    "file": "guineafowl_1.mp3",
+    "duration": 2.543,
+    "score": 7.86,
+    "xc_id": "1074274",
+    "source": "https://xeno-canto.org/1074274",
+    "recordist": "African Bioacoustics Community",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "South Africa"
+   },
+   {
+    "file": "guineafowl_2.mp3",
+    "duration": 1.324,
+    "score": 4.12,
+    "xc_id": "1082945",
+    "source": "https://xeno-canto.org/1082945",
+    "recordist": "African Bioacoustics Community",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "South Africa"
+   }
+  ]
+ },
+ "peafowl": {
+  "common": "Indian Peafowl",
+  "scientific": "Pavo cristatus",
+  "pack": "weird",
+  "blurb": "Behind the famous tail is a scream like somebody calling for help, delivered at dawn and repeated.",
+  "clips": [
+   {
+    "file": "peafowl_0.mp3",
+    "duration": 0.94,
+    "score": 26.8,
+    "xc_id": "1077506",
+    "source": "https://xeno-canto.org/1077506",
+    "recordist": "Christian Kerihuel",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "India"
+   },
+   {
+    "file": "peafowl_1.mp3",
+    "duration": 0.639,
+    "score": 18.5,
+    "xc_id": "1139791",
+    "source": "https://xeno-canto.org/1139791",
+    "recordist": "Clement Bruneau",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France"
+   },
+   {
+    "file": "peafowl_2.mp3",
+    "duration": 0.592,
+    "score": 17.05,
+    "xc_id": "1139792",
+    "source": "https://xeno-canto.org/1139792",
+    "recordist": "Clement Bruneau",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "France"
+   }
+  ]
+ },
+ "bellbird3": {
+  "common": "Three-wattled Bellbird",
+  "scientific": "Procnias tricarunculatus",
+  "pack": "tropical",
+  "blurb": "Three worm-like wattles dangle from the beak. The call is a metallic bonk heard half a mile away.",
+  "clips": [
+   {
+    "file": "bellbird3_0.mp3",
+    "duration": 1.347,
+    "score": 14.84,
+    "xc_id": "1034734",
+    "source": "https://xeno-canto.org/1034734",
+    "recordist": "Randall Jim\u00e9nez-Borb\u00f3n",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Costa Rica"
+   },
+   {
+    "file": "bellbird3_1.mp3",
+    "duration": 0.464,
+    "score": 8.84,
+    "xc_id": "928842",
+    "source": "https://xeno-canto.org/928842",
+    "recordist": "Xavier Riera",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Panama"
+   },
+   {
+    "file": "bellbird3_2.mp3",
+    "duration": 0.464,
+    "score": 8.75,
+    "xc_id": "747775",
+    "source": "https://xeno-canto.org/747775",
+    "recordist": "Brendan Sloan",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Costa Rica"
+   }
+  ]
+ },
+ "bellbirdb": {
+  "common": "Bearded Bellbird",
+  "scientific": "Procnias averano",
+  "pack": "tropical",
+  "blurb": "Wears a curtain of black wattles under the chin and strikes a note like a hammer on an anvil.",
+  "clips": [
+   {
+    "file": "bellbirdb_0.mp3",
+    "duration": 0.464,
+    "score": 6.65,
+    "xc_id": "944372",
+    "source": "https://xeno-canto.org/944372",
+    "recordist": "JAYRSON ARAUJO DE OLIVEIRA",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil"
+   },
+   {
+    "file": "bellbirdb_1.mp3",
+    "duration": 0.464,
+    "score": 4.27,
+    "xc_id": "949161",
+    "source": "https://xeno-canto.org/949161",
+    "recordist": "Pepe Rojas",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Trinidad and Tobago"
+   },
+   {
+    "file": "bellbirdb_2.mp3",
+    "duration": 1.022,
+    "score": 4.22,
+    "xc_id": "918411",
+    "source": "https://xeno-canto.org/918411",
+    "recordist": "Francisco contreras @francontreras.80",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Venezuela (Bolivarian Republic of)"
+   }
+  ]
+ },
+ "musicianwren": {
+  "common": "Musician Wren",
+  "scientific": "Cyphorhinus arada",
+  "pack": "tropical",
+  "blurb": "Sings in clean intervals that sound composed, and is often mistaken for a person whistling a tune.",
+  "clips": [
+   {
+    "file": "musicianwren_0.mp3",
+    "duration": 2.752,
+    "score": 12.27,
+    "xc_id": "984286",
+    "source": "https://xeno-canto.org/984286",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   },
+   {
+    "file": "musicianwren_1.mp3",
+    "duration": 2.589,
+    "score": 10.69,
+    "xc_id": "984287",
+    "source": "https://xeno-canto.org/984287",
+    "recordist": "Marc Anderson",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Ecuador"
+   },
+   {
+    "file": "musicianwren_2.mp3",
+    "duration": 1.312,
+    "score": 3.99,
+    "xc_id": "905037",
+    "source": "https://xeno-canto.org/905037",
+    "recordist": "Thiago Bicudo",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Brazil"
+   }
+  ]
+ },
+ "superbstarling": {
+  "common": "Superb Starling",
+  "scientific": "Lamprotornis superbus",
+  "pack": "tropical",
+  "blurb": "Iridescent blue over orange, with a long creaking chattering song delivered at considerable volume.",
+  "clips": [
+   {
+    "file": "superbstarling_0.mp3",
+    "duration": 0.871,
+    "score": 13.29,
+    "xc_id": "810927",
+    "source": "https://xeno-canto.org/810927",
+    "recordist": "GABRIEL LEITE",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Kenya"
+   },
+   {
+    "file": "superbstarling_1.mp3",
+    "duration": 0.499,
+    "score": 13.03,
+    "xc_id": "948238",
+    "source": "https://xeno-canto.org/948238",
+    "recordist": "Peter Boesman",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Kenya"
+   },
+   {
+    "file": "superbstarling_2.mp3",
+    "duration": 0.94,
+    "score": 12.03,
+    "xc_id": "864132",
+    "source": "https://xeno-canto.org/864132",
+    "recordist": "Oliver Fowler",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Kenya"
+   }
+  ]
+ },
+ "chachalaca": {
+  "common": "Plain Chachalaca",
+  "scientific": "Ortalis vetula",
+  "pack": "tropical",
+  "blurb": "Groups shout their own name back and forth at dawn until the whole thicket has joined in.",
+  "clips": [
+   {
+    "file": "chachalaca_0.mp3",
+    "duration": 1.869,
+    "score": 24.89,
+    "xc_id": "1099278",
+    "source": "https://xeno-canto.org/1099278",
+    "recordist": "Scott Crabtree",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   },
+   {
+    "file": "chachalaca_1.mp3",
+    "duration": 2.531,
+    "score": 9.8,
+    "xc_id": "1090160",
+    "source": "https://xeno-canto.org/1090160",
+    "recordist": "GABRIEL LEITE",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "Guatemala"
+   },
+   {
+    "file": "chachalaca_2.mp3",
+    "duration": 3.042,
+    "score": 9.79,
+    "xc_id": "1091754",
+    "source": "https://xeno-canto.org/1091754",
+    "recordist": "Sue Riffe",
+    "license": "CC BY-NC 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+    "country": "United States of America"
+   }
+  ]
  }
 }
