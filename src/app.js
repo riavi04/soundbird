@@ -600,23 +600,59 @@ function buildSequencer() {
   updateSeqInfo();
 }
 
-/* The favorites dropdown in the composer. Each option carries the bird and the
-   exact clip, so choosing one drops in a lane already set to that sound. */
+/* The favorites picker in the composer. A native dropdown cannot preview an
+   option on hover, so this is a custom menu: hovering an item plays that exact
+   clip, clicking it drops in a lane already set to it. */
 function renderFavPicker() {
-  const sel = $("#addfav");
-  if (!sel) return;
+  const btn = $("#favbtn");
+  const menu = $("#favmenu");
+  const fld = $("#favfld");
+  if (!btn || !menu) return;
   const favs = liveFavs();
   // The whole control hides until there is at least one favorite, so it does
   // not sit there empty next to "Add a bird".
-  const label = sel.closest("label");
-  if (label) label.classList.toggle("hide", favs.length === 0);
-  if (!favs.length) { sel.innerHTML = '<option value="">no favorites yet</option>'; return; }
-  sel.innerHTML = `<option value="">${favs.length} saved</option>` +
-    favs.map((id) => {
-      const [key, i] = id.split(":");
-      const name = (BIRDS[key] || {}).common || key;
-      return `<option value="${id}">${name} · clip ${(+i) + 1}</option>`;
-    }).join("");
+  if (fld) fld.classList.toggle("hide", favs.length === 0);
+  btn.textContent = favs.length ? `${favs.length} saved` : "no favorites";
+  menu.innerHTML = "";
+  favs.forEach((id) => {
+    const [key, i] = id.split(":");
+    const name = (BIRDS[key] || {}).common || key;
+    const item = document.createElement("button");
+    item.type = "button";
+    item.className = "favitem";
+    item.setAttribute("role", "menuitem");
+    const thumb = PHOTOS[key] ? `<img src="${PHOTOS[key].data}" alt="">` : "";
+    item.innerHTML = `${thumb}<span>${name} · clip ${(+i) + 1}</span>`;
+    // Hover plays it. previewCut in Player.preview stops the previous one, so
+    // sweeping the list sounds them one at a time rather than all at once.
+    item.onpointerenter = () => { Player.preview(key, +i, 0); popBird(key); };
+    item.onclick = () => {
+      addLane(key, true, +i);
+      Player.preview(key, +i, 0);
+      popBird(key);
+      toast(`${name} clip ${(+i) + 1} added`);
+      closeFavMenu();
+    };
+    menu.appendChild(item);
+  });
+}
+
+function openFavMenu() {
+  const menu = $("#favmenu"), btn = $("#favbtn");
+  if (!menu || !liveFavs().length) return;
+  menu.hidden = false;
+  btn.setAttribute("aria-expanded", "true");
+}
+function closeFavMenu() {
+  const menu = $("#favmenu"), btn = $("#favbtn");
+  if (!menu) return;
+  menu.hidden = true;
+  btn.setAttribute("aria-expanded", "false");
+  Player.previewCut();
+}
+function toggleFavMenu() {
+  const menu = $("#favmenu");
+  if (menu && menu.hidden) openFavMenu(); else closeFavMenu();
 }
 
 function addLane(birdKey, redraw = true, clipIdx = 0) {
@@ -685,7 +721,9 @@ function renderSeq() {
         + (s % STEPS_PER_BAR === 0 ? " barstart" : "")
         + (pattern.drums[key][s] ? " on" : "");
       b.dataset.step = s;
+      b.dataset.row = "drum:" + key;
       b.onclick = () => {
+        if (marqueeMode) return;      // in erase mode, drags do the editing
         pattern.drums[key][s] = pattern.drums[key][s] ? 0 : 1;
         b.classList.toggle("on", !!pattern.drums[key][s]);
         if (pattern.drums[key][s] && key !== "bass") previewDrum(key);
@@ -732,7 +770,9 @@ function renderSeq() {
       b.dataset.step = s;
       b.title = `${lane.common} · bar ${Math.floor(s / STEPS_PER_BAR) + 1}, `
         + `beat ${Math.floor((s % STEPS_PER_BAR) / 4) + 1}.${(s % 4) + 1}`;
+      b.dataset.row = "lane:" + lane.id;
       b.onclick = () => {
+        if (marqueeMode) return;      // in erase mode, drags do the editing
         lane.cells[s] = lane.cells[s] ? 0 : 1;
         b.classList.toggle("on", !!lane.cells[s]);
         if (lane.cells[s]) Player.preview(lane.bird, lane.clip, lane.semi);
@@ -742,6 +782,78 @@ function renderSeq() {
       tr.appendChild(cell);
     }
     t.appendChild(tr);
+  });
+}
+
+/* ---------------- drag to erase an area ---------------- */
+/* With erase mode on, dragging across the grid draws a box and clears every
+   filled tile inside it, the way you would shift-drag a range in a spreadsheet.
+   Off, the grid edits one tile at a time as before. */
+let marqueeMode = false;
+
+function setMarquee(on) {
+  marqueeMode = on;
+  const btn = $("#seqerase");
+  if (btn) {
+    btn.classList.toggle("on", on);
+    btn.textContent = on ? "Done erasing" : "Erase area";
+  }
+  const wrap = $(".seqwrap");
+  if (wrap) wrap.classList.toggle("erasing", on);
+}
+
+function clearCell(cellEl) {
+  const step = +cellEl.dataset.step;
+  const row = cellEl.dataset.row || "";
+  if (row.startsWith("drum:")) {
+    const k = row.slice(5);
+    if (pattern.drums[k]) pattern.drums[k][step] = 0;
+  } else if (row.startsWith("lane:")) {
+    const lane = pattern.lanes.find((l) => l.id === row.slice(5));
+    if (lane) lane.cells[step] = 0;
+  }
+  cellEl.classList.remove("on");
+}
+
+function setupMarquee() {
+  const table = $("#seqtable");
+  if (!table || table._marqueeReady) return;
+  table._marqueeReady = true;
+  let box = null, sx = 0, sy = 0;
+
+  const place = (x, y) => {
+    box.style.left = Math.min(sx, x) + "px";
+    box.style.top = Math.min(sy, y) + "px";
+    box.style.width = Math.abs(x - sx) + "px";
+    box.style.height = Math.abs(y - sy) + "px";
+  };
+  const onMove = (e) => place(e.clientX, e.clientY);
+  const onUp = () => {
+    window.removeEventListener("pointermove", onMove);
+    window.removeEventListener("pointerup", onUp);
+    const r = box.getBoundingClientRect();
+    box.remove(); box = null;
+    let n = 0;
+    // A zero-size drag (a tap) still erases the tile under it.
+    for (const c of $$("#seqtable .cell")) {
+      const cr = c.getBoundingClientRect();
+      const hit = cr.left < r.right + 1 && cr.right > r.left - 1
+        && cr.top < r.bottom + 1 && cr.bottom > r.top - 1;
+      if (hit && c.classList.contains("on")) { clearCell(c); n++; }
+    }
+    toast(n ? `Erased ${n} tile${n > 1 ? "s" : ""}` : "Nothing to erase there");
+  };
+
+  table.addEventListener("pointerdown", (e) => {
+    if (!marqueeMode || e.button !== 0) return;
+    e.preventDefault();
+    sx = e.clientX; sy = e.clientY;
+    box = document.createElement("div");
+    box.className = "marquee";
+    document.body.appendChild(box);
+    place(sx, sy);
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", onUp);
   });
 }
 
@@ -934,6 +1046,8 @@ function switchView(name) {
   ["generate", "compose", "aviary"].forEach((v) => {
     $("#view-" + v).classList.toggle("hide", v !== name);
   });
+  // Leaving the composer drops its transient modes.
+  if (name !== "compose") { setMarquee(false); closeFavMenu(); }
 }
 
 /* ---------------- boot ---------------- */
@@ -1021,16 +1135,15 @@ function boot() {
   $("#addbird").onchange = (e) => {
     if (e.target.value) { addLane(e.target.value); e.target.value = ""; }
   };
-  $("#addfav").onchange = (e) => {
-    const val = e.target.value;
-    e.target.value = "";
-    if (!val) return;
-    const [key, i] = val.split(":");
-    addLane(key, true, +i);
-    Player.preview(key, +i, 0);
-    popBird(key);
-    toast(`${(BIRDS[key] || {}).common || key} clip ${(+i) + 1} added`);
-  };
+  $("#favbtn").onclick = (e) => { e.stopPropagation(); toggleFavMenu(); };
+  // Clicking away from the menu, or leaving it with the mouse, closes it.
+  document.addEventListener("click", (e) => {
+    if (!$("#favmenu").hidden && !e.target.closest(".favmenu-wrap")) closeFavMenu();
+  });
+  $("#favmenu").addEventListener("pointerleave", () => Player.previewCut());
+
+  setupMarquee();
+  $("#seqerase").onclick = () => setMarquee(!marqueeMode);
 }
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);

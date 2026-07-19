@@ -117,10 +117,14 @@ const Player = {
             gain: ev.gain,
             pan: ev.pan,
             laneGain: laneGains[ev.lane] || null,
-            // Bounded so a long call stops before the next one lands. Left to
-            // ring, overlapping calls smear into each other and the rhythm
-            // disappears, which is what made the busiest setting formless.
-            maxDur: this.stepDur(song) * (song.clipSteps || 6),
+            // Generated songs bound a call so it stops before the next lands,
+            // which is what keeps a busy arrangement from smearing. The composer
+            // does not: a hit there is placed deliberately, so it rings its full
+            // natural length, and a pitched-down sound is as long and dragged
+            // out as it is when previewed on its own.
+            maxDur: song.kind === "pattern"
+              ? 0
+              : this.stepDur(song) * (song.clipSteps || 6),
           });
           break;
         }
@@ -200,15 +204,38 @@ const Player = {
     this.laneGains = {};
   },
 
-  /* One-off preview used by the sound library and the sequencer grid. */
+  /* Fade whatever preview is currently sounding. Lets a new preview cut the
+     last one instead of piling on top, which matters when sweeping the mouse
+     down the favorites menu. */
+  previewCut() {
+    if (this._pvBus) {
+      try {
+        const g = this._pvBus.gain;
+        g.cancelScheduledValues(this.ctx.currentTime);
+        g.setTargetAtTime(0.0001, this.ctx.currentTime, 0.03);
+      } catch (e) {}
+      this._pvBus = null;
+    }
+  },
+
+  /* One-off preview used by the sound library and the sequencer grid. Routed
+     through a per-preview bus so previewCut can silence it. */
   preview(birdKey, clipIdx = 0, semitones = 0) {
     this.init();
     this.resume();
     const buf = this.bufferFor(birdKey, clipIdx);
     if (!buf) return;
     if (!this._pvGraph) this._pvGraph = buildGraph(this.ctx, { reverb: 0.22, delay: 0.12 });
+    this.previewCut();
+    const bus = this.ctx.createGain();
+    bus.gain.value = 1;
+    bus.connect(this._pvGraph.dry);
+    const rev = this.ctx.createGain();
+    rev.gain.value = 0.3;
+    bus.connect(rev); rev.connect(this._pvGraph.revSend);
+    this._pvBus = bus;
     bird(this._pvGraph, buf, this.ctx.currentTime + 0.01,
-         { semitones, gain: 0.95, pan: 0 });
+         { semitones, gain: 0.95, pan: 0, laneGain: bus });
   },
 
   /* Offline render for downloads. Same events, same voices, no live clock. */

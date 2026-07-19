@@ -116,7 +116,7 @@
   <section id="view-compose" class="hide">
     <div class="panel">
       <h2>Build your own</h2>
-      <p class="lede">Each row is a bird or a drum. Click the squares to place hits. The number next to each bird shifts its pitch in semitones, which also makes it shorter and brighter as it goes up. Write up to eight bars, then pick how long the finished track should run.</p>
+      <p class="lede">Each row is a bird or a drum. Click the squares to place hits. The number next to each bird shifts its pitch in semitones, which also makes it shorter and brighter as it goes up (and lower makes it longer and more drawn out). Write up to thirty-two bars, then pick how long the finished track should run.</p>
       <div class="row" style="gap:18px">
         <button class="btn primary" id="seqplay">Play loop</button>
         <label class="fld">Tempo <span id="bpmlabel" style="color:var(--txt);font-family:var(--mono)">128 bpm</span>
@@ -143,11 +143,15 @@
         <label class="fld">Add a bird
           <select id="addbird"></select>
         </label>
-        <label class="fld">From favorites
-          <select id="addfav"></select>
+        <label class="fld" id="favfld">From favorites
+          <div class="favmenu-wrap">
+            <button class="favbtn" id="favbtn" type="button" aria-haspopup="true" aria-expanded="false">no favorites</button>
+            <div class="favmenu" id="favmenu" role="menu" hidden></div>
+          </div>
         </label>
         <div class="grow"></div>
         <button class="btn sm" id="seqrandom">Surprise me</button>
+        <button class="btn sm" id="seqerase">Erase area</button>
         <button class="btn sm" id="seqclear">Clear</button>
         <button class="btn sm gold" id="seqdl">Download</button>
       </div>
