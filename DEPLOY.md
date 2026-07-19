@@ -1,57 +1,59 @@
-# Sharing soundbird
+# Publishing soundbird
 
-The repository is **private** and there is no public website. The page is
-written to one person by name, so it is shared as a link rather than published.
-
-## How Ben gets it
-
-The built page is published as a **Claude artifact**, which is private until you
-choose to share it:
-
-<https://claude.ai/code/artifact/9b05c645-905f-474a-8e58-41155d2f3cfc>
-
-1. Open that link.
-2. Use the **share** menu on the page.
-3. Send Ben the link it gives you.
-
-Anyone with the link can open it. Nothing indexes it, and there is no public
-GitHub footprint. It works on a phone.
+The site is live at **<https://riavi04.github.io/soundbird/>**, served by GitHub
+Pages from the `docs/` folder of this repository.
 
 ## Updating it
 
-Say what you want changed. Claude edits the source, rebuilds, and republishes to
-**the same link**, so anything already sent to Ben keeps working and simply
-shows the new version.
-
-The underlying commands are:
+Say what you want changed and Claude will edit, rebuild and push. Or run it
+yourself:
 
 ```sh
-python3 src/build.py dist/sound-bird.html    # rebuild
-git add -A && git commit -m "..." && git push # save to the private repo
+cd ~/Projects/sound-bird
+./deploy.sh "what changed"
 ```
 
-then republish `dist/sound-bird.html` as the artifact.
+That rebuilds the page, commits, and pushes. The live site follows about a
+minute later. Behind it:
 
-## The offline copy
+```sh
+python3 src/build.py dist/sound-bird.html    # writes docs/index.html
+git add -A && git commit -m "..." && git push
+```
 
-`dist/standalone.html` is the same page as a single 6.4 MB file that needs no
-internet once it has been opened. AirDrop it, or put it on a USB stick. Double
-clicking it works.
+`build.py` writes `docs/index.html`, which is the file Pages serves, so a plain
+rebuild plus push is all a deploy needs.
 
-## If you ever do want a real public URL
+## The link for Ben
 
-Three routes, in increasing effort:
+Either works:
 
-- **Make this repository public** and turn on Pages: Settings → Pages → Deploy
-  from a branch → `main` → `/docs`. It would then live at
-  `https://riavi04.github.io/soundbird/`. Everything, including the personal
-  intro cards and the whole commit history, becomes world-readable.
-- **Keep the source private** and host only the built page somewhere like
-  Cloudflare Pages or Netlify, both of which deploy from a private repository on
-  their free tiers. The page is still public to anyone with the address.
-- **Publish a neutral version** with the personal copy stripped out, and keep
-  the personal one as the private link. That is a change to the source rather
-  than to the hosting.
+- The live site: <https://riavi04.github.io/soundbird/>
+- The Claude artifact:
+  <https://claude.ai/code/artifact/9b05c645-905f-474a-8e58-41155d2f3cfc>
 
-`build.py` already writes `docs/index.html`, so the first route needs no code
-changes.
+The artifact is kept in step with the site, so either link can be sent and both
+keep working when the page is updated.
+
+## Things worth remembering
+
+- **The repository is public.** The source, the whole commit history and the
+  personal intro cards are readable by anyone, and GitHub is searchable.
+- **The licenses travel with it.** Recordings are CC BY-NC, so non-commercial
+  only. Several photographs are ShareAlike, which applies to the resized copies
+  served here. Every recordist and photographer is credited on their card and
+  listed in [CREDITS.md](CREDITS.md).
+
+## Turning it off
+
+Making the repository private switches Pages off automatically on a free plan,
+which takes the site down. To remove it entirely:
+
+```sh
+gh repo delete soundbird
+```
+
+## Offline copy
+
+`dist/standalone.html` is the same page as one 6.4 MB file that needs no
+internet once opened. Double clicking it works.

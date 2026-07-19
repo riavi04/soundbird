@@ -1,14 +1,13 @@
 # soundbird
 
+**Live at <https://riavi04.github.io/soundbird/>**
+
 A soundboard where every sound is a bird. Generates tracks from real wild bird
 recordings, or lets you build your own patterns by hand. 70 species, each with
 a photograph and a credit. Everything runs in the browser with no backend and
 no network access at runtime.
 
-**This repository is private, and the site is shared as a private link rather
-than a public site.** The page is written to one person by name, so it is not
-something to leave sitting on a public URL. See [DEPLOY.md](DEPLOY.md) for how
-sharing works and what the options are.
+To publish a change: `./deploy.sh "what changed"`. See [DEPLOY.md](DEPLOY.md).
 
 ## Layout
 
